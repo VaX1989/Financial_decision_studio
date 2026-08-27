@@ -6,7 +6,7 @@ Rights not granted by that license, including commercial use where applicable, r
 
 Commercial licensing may be available for professional, organizational, embedded, hosted, white-label, or other commercial uses.
 
-**Contact:** open a [GitHub Discussion](../../discussions) or [Issue](../../issues) on this repository, or reach the project owner via their GitHub profile ([@VaX1989](https://github.com/VaX1989)), for commercial licensing enquiries.
+**Contact:** open an [Issue](../../issues) on this repository, or reach the project owner via their GitHub profile ([@VaX1989](https://github.com/VaX1989)), for commercial licensing enquiries.
 
 Pricing, tiers, and commercial contract terms are determined on a case-by-case basis and are not published here.
 
