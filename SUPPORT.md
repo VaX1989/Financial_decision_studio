@@ -4,8 +4,8 @@ Financial Decision Studio remains free to use under its license (see [`LICENSE`]
 
 ## Ways to support
 
-- **Buy Me a Coffee:** see the badge/link on the main [`README.md`](README.md). *(Status: see README — set up once a verified handle exists.)*
-- **GitHub Sponsors:** see the Sponsor button on this repository's GitHub page, if active. *(Status: see README.)*
+- **Buy Me a Coffee:** [buymeacoffee.com/pietrocorona](https://buymeacoffee.com/pietrocorona).
+- **GitHub Sponsors:** not currently active.
 
 ## What donations are — and are not
 

@@ -80,7 +80,7 @@ L'uso commerciale (rivendita, hosting a pagamento/SaaS, white-label, integrazion
 
 ## Sostieni il progetto
 
-Financial Decision Studio è gratuita secondo la sua licenza — il sostegno è facoltativo. Vedi [`SUPPORT.md`](SUPPORT.md) (in inglese) per i modi attuali di sostenere lo sviluppo (Buy Me a Coffee / GitHub Sponsors, dove attivi). **Le donazioni non acquistano il software né concedono diritti oltre quelli previsti dalla licenza.**
+Financial Decision Studio è gratuita secondo la sua licenza — il sostegno è facoltativo. Se il progetto ti è utile, puoi sostenerne lo sviluppo tramite **[Buy Me a Coffee](https://buymeacoffee.com/pietrocorona)**. **Il sostegno è volontario: non acquista il software, non sblocca alcuna funzionalità e non concede diritti ulteriori rispetto a quelli previsti dalla licenza.** Vedi [`SUPPORT.md`](SUPPORT.md) (in inglese).
 
 ## Segnalare problemi
 
