@@ -1,6 +1,6 @@
 # Commercial Licensing
 
-Financial Decision Studio is made available under the license contained in this repository (the [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) — see [`LICENSE`](LICENSE)).
+Financial Decision Studio is made available under the license contained in this repository (the [PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0) — see [`LICENSE`](LICENSE)).
 
 Rights not granted by that license, including commercial use where applicable, require separate authorization from the copyright holder.
 

@@ -6,7 +6,7 @@ A local-first personal financial planning and decision intelligence application.
 
 **Free for permitted personal / non-commercial use.** Runs entirely in your browser — single HTML file, no installation, no account, no cloud required, offline-first. Your financial data stays on your own device during normal local use. Source-available under the license in this repository (not OSI-approved open source — see [Licence](#license)).
 
-[![License: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue)](LICENSE)
+[![License: PolyForm Strict 1.0.0](https://img.shields.io/badge/license-PolyForm%20Strict%201.0.0-blue)](LICENSE)
 [![Release](https://img.shields.io/badge/release-v3.0.0-2e628f)](../../releases/latest)
 
 ![Financial Decision Studio — plan dashboard](assets/screenshots/01-plan-dashboard.png)
@@ -46,7 +46,7 @@ Based on the current 3.0.0 release:
 - **Tax assumptions** — generic user-defined tax/net inputs, plus a country-specific planning pack (Italy 2026) as a simplified planning approximation — not tax-filing software.
 - **Local persistence & portability** — checkpoints, Plan JSON export, Portable HTML export, and password-protected Encrypted Portable HTML for backups and moving a plan between devices.
 
-See the full [Italian user guide](docs/USER_GUIDE_IT.md) for the complete walkthrough of every feature (the app's interface is in English; the guide explains it in Italian).
+See the full [English user guide](docs/USER_GUIDE_EN.md) for the complete walkthrough of every feature (an [Italian guide](docs/USER_GUIDE_IT.md) is also available).
 
 ## Quick start
 
@@ -61,7 +61,8 @@ The canonical way to get Financial Decision Studio is the latest **[GitHub Relea
 
 ## Documentation
 
-- [Italian user guide](docs/USER_GUIDE_IT.md) — the complete guide (Markdown; an HTML version is also included at [`docs/USER_GUIDE_IT.html`](docs/USER_GUIDE_IT.html)).
+- [English user guide](docs/USER_GUIDE_EN.md) — the complete guide (Markdown; an HTML version is also included at [`docs/USER_GUIDE_EN.html`](docs/USER_GUIDE_EN.html)).
+- [Guida utente italiana](docs/USER_GUIDE_IT.md) — la guida completa in italiano (versione HTML: [`docs/USER_GUIDE_IT.html`](docs/USER_GUIDE_IT.html)).
 
 ## Privacy
 
@@ -69,7 +70,7 @@ Financial Decision Studio is local-first: the released HTML file makes no networ
 
 ## Limitations
 
-Financial Decision Studio is a planning and decision-support tool, not a forecasting, tax-filing, or advisory product. Notable limits (see [`docs/USER_GUIDE_IT.md`](docs/USER_GUIDE_IT.md), Part XIV, for the complete list):
+Financial Decision Studio is a planning and decision-support tool, not a forecasting, tax-filing, or advisory product. Notable limits (see [`docs/USER_GUIDE_EN.md`](docs/USER_GUIDE_EN.md), Part XIV, for the complete list):
 
 - Tax logic (including the Italy 2026 pack) is a simplified planning approximation, not tax-filing software.
 - Monte Carlo and sensitivity tools describe a modeled range of outcomes under your assumptions — they are not predictions or probabilities of real-world events.
@@ -80,7 +81,7 @@ See [`DISCLAIMER.md`](DISCLAIMER.md) for the full disclaimer.
 
 ## License
 
-Financial Decision Studio is distributed under the **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)** (SPDX: `PolyForm-Noncommercial-1.0.0`) — see [`LICENSE`](LICENSE). In short: free to use, copy, modify, and redistribute for **any noncommercial purpose** (including personal use, and use by nonprofits, schools, research bodies, and government institutions); **commercial use is not permitted** without separate authorization. This is a **source-available** license, not an OSI-approved open source license. Full plain-language explanation, including where "noncommercial" is broader than "personal use": [`LICENSING.md`](LICENSING.md).
+Financial Decision Studio is distributed under the **[PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0)** (SPDX: `PolyForm-Strict-1.0.0`) — see [`LICENSE`](LICENSE). In short: free to **use** for **any noncommercial purpose** (including personal use, and use by nonprofits, schools, research bodies, and government institutions); **commercial use is not permitted** without separate authorization, and the license does **not** grant any right to redistribute copies or create modified versions — always get the official release from this repository's [Releases](../../releases/latest) page. This is a **source-available** license, not an OSI-approved open source license. Full plain-language explanation, including exactly why Strict was chosen over the more permissive PolyForm Noncommercial license: [`LICENSING.md`](LICENSING.md).
 
 ## Commercial use
 

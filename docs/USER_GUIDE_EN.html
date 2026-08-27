@@ -1,0 +1,2590 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Financial Decision Studio ��� Complete User Guide</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>
+:root{--bg:#f6f8fb;--paper:#fff;--text:#182230;--muted:#667085;--line:#dfe5ec;--ink:#12304c;--accent:#286592;--accent-soft:#eef6fb;--warn:#8b5d12;--good:#166b54;--code:#f3f5f7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;line-height:1.62;font-size:16px}body>header,body>nav,body>main{max-width:1180px;margin:auto}header#title-block-header{background:linear-gradient(135deg,#102b45,#244f70);color:#fff;max-width:none;padding:54px max(24px,calc((100vw - 1120px)/2));margin:0 0 0}header#title-block-header h1{font-size:38px;margin:0;letter-spacing:-.035em}header#title-block-header .subtitle{opacity:.8}nav#TOC{position:sticky;top:0;z-index:10;max-width:none;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-bottom:1px solid var(--line);padding:10px max(18px,calc((100vw - 1180px)/2));max-height:32vh;overflow:auto}nav#TOC>ul{max-width:1180px;margin:auto;display:flex;gap:8px 18px;flex-wrap:wrap;list-style:none;padding:0}nav#TOC ul ul{display:none}nav#TOC a{color:var(--ink);text-decoration:none;font-size:13px;font-weight:700}main,body>section,body>h1,body>h2,body>h3,body>h4,body>p,body>table,body>blockquote,body>ul,body>ol,body>hr{max-width:980px;margin-left:auto;margin-right:auto}body>h1{margin-top:56px;color:var(--ink);font-size:34px;letter-spacing:-.03em;border-top:1px solid var(--line);padding-top:42px}body>h1:first-of-type{border-top:0}body>h2{margin-top:38px;color:var(--ink);font-size:25px;letter-spacing:-.02em}body>h3{margin-top:28px;color:#24445f;font-size:19px}body>h4{font-size:16px;color:#294964}p,li{max-width:82ch}a{color:var(--accent)}strong{color:#102b45}blockquote{border-left:4px solid var(--accent);background:var(--accent-soft);padding:13px 18px;margin-top:22px;margin-bottom:22px;color:#34475a;border-radius:0 10px 10px 0}blockquote p{margin:.3em 0}table{border-collapse:collapse;width:min(980px,calc(100% - 32px));background:var(--paper);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:table;margin-top:18px;margin-bottom:24px}th,td{padding:11px 13px;border-bottom:1px solid var(--line);vertical-align:top;text-align:left}th{background:#edf3f7;color:var(--ink);font-size:13px}tr:last-child td{border-bottom:0}code{background:var(--code);border:1px solid var(--line);padding:.12em .35em;border-radius:5px;font-size:.9em}pre{max-width:980px;margin:20px auto;background:#14202b;color:#eef4f8;border-radius:12px;padding:16px;overflow:auto}hr{border:0;border-top:1px solid var(--line);margin-top:42px;margin-bottom:42px}ul,ol{padding-left:34px}li{margin:.28em 0}.task-list-item{list-style:none}.task-list-item input{margin-right:8px}body>p,body>ul,body>ol,body>blockquote{padding-left:16px;padding-right:16px}@media(max-width:720px){body{font-size:15px}header#title-block-header{padding:36px 18px}header#title-block-header h1{font-size:30px}nav#TOC{position:relative;max-height:none;padding:10px 16px}nav#TOC>ul{display:block}nav#TOC li{margin:5px 0}body>h1,body>h2,body>h3,body>h4{padding-left:16px;padding-right:16px}body>h1{font-size:28px}body>h2{font-size:22px}table{display:block;overflow-x:auto}blockquote{margin-left:16px;margin-right:16px}}@media print{body{background:#fff;font-size:11pt}nav#TOC{position:static;max-height:none;page-break-after:always}header#title-block-header{background:#fff;color:#000;padding:0 0 24px;border-bottom:2px solid #000}body>h1{page-break-before:always}a{color:#000;text-decoration:none}}
+
+</style>
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Financial Decision Studio ��� Complete User Guide</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#financial-decision-studio"
+id="toc-financial-decision-studio">FINANCIAL DECISION STUDIO</a></li>
+<li><a href="#part-i-introduction" id="toc-part-i-introduction">Part I —
+Introduction</a></li>
+<li><a href="#part-ii-start-in-5-minutes"
+id="toc-part-ii-start-in-5-minutes">Part II — Start in 5
+minutes</a></li>
+<li><a href="#part-iii-building-your-plan"
+id="toc-part-iii-building-your-plan">Part III — Building your
+plan</a></li>
+<li><a href="#part-iv-dashboard-and-kpis"
+id="toc-part-iv-dashboard-and-kpis">Part IV — Dashboard and
+KPIs</a></li>
+<li><a href="#part-v-decisions" id="toc-part-v-decisions">Part V —
+Decisions</a></li>
+<li><a href="#part-vi-goals" id="toc-part-vi-goals">Part VI —
+Goals</a></li>
+<li><a href="#part-vii-optimize" id="toc-part-vii-optimize">Part VII —
+Optimize</a></li>
+<li><a href="#part-viii-lab" id="toc-part-viii-lab">Part VIII —
+Lab</a></li>
+<li><a href="#part-ix-actual-vs-plan"
+id="toc-part-ix-actual-vs-plan">Part IX — Actual vs Plan</a></li>
+<li><a href="#part-x-saving-privacy-and-sharing"
+id="toc-part-x-saving-privacy-and-sharing">Part X — Saving, privacy, and
+sharing</a></li>
+<li><a
+href="#part-xi-how-to-make-decisions-with-financial-decision-studio"
+id="toc-part-xi-how-to-make-decisions-with-financial-decision-studio">Part
+XI — How to make decisions with Financial Decision Studio</a></li>
+<li><a href="#part-xii-practical-examples"
+id="toc-part-xii-practical-examples">Part XII — Practical
+examples</a></li>
+<li><a href="#part-xiii-common-mistakes"
+id="toc-part-xiii-common-mistakes">Part XIII — Common mistakes</a></li>
+<li><a href="#part-xiv-real-model-limitations"
+id="toc-part-xiv-real-model-limitations">Part XIV — Real model
+limitations</a></li>
+<li><a href="#glossary" id="toc-glossary">Glossary</a></li>
+<li><a href="#faq" id="toc-faq">FAQ</a></li>
+<li><a href="#checklist-before-making-an-important-decision"
+id="toc-checklist-before-making-an-important-decision">Checklist —
+Before making an important decision</a></li>
+<li><a href="#checklist-data-backup-and-security"
+id="toc-checklist-data-backup-and-security">Checklist — Data backup and
+security</a></li>
+<li><a href="#conclusion" id="toc-conclusion">Conclusion</a></li>
+</ul>
+</nav>
+<h1 id="financial-decision-studio">FINANCIAL DECISION STUDIO</h1>
+<h2 id="complete-user-guide">Complete User Guide</h2>
+<p><strong>Documented version:</strong> Financial Decision Studio
+3.0.0<br />
+<strong>Engine:</strong> 3.0.0<br />
+<strong>Schema:</strong> 2.1.0<br />
+<strong>Build:</strong> <code>FDS-DEFINITIVE-20260826</code></p>
+<hr />
+<h2 id="how-to-use-this-guide">How to use this guide</h2>
+<p>Financial Decision Studio uses an English-language interface. This
+guide therefore keeps the product’s exact UI labels—such as
+<strong>Liquid Net Worth</strong>, <strong>Run simulation</strong>,
+<strong>Create scenario</strong>, and <strong>Rebase future plan from
+this snapshot</strong>—and explains what they mean in practical
+financial terms.</p>
+<p>If you simply want to get started, read <strong>Part II — Start in 5
+minutes</strong> and <strong>Part IV — Dashboard and KPIs</strong>. If
+you are comparing alternatives, move to <strong>Part V —
+Decisions</strong>. If you need to understand probability, downside
+risk, assumption fragility, or the drivers of a result, use <strong>Part
+VIII — Lab</strong>. <strong>Data</strong>, <strong>Audit</strong>, and
+<strong>Expert plan JSON</strong> are primarily advanced-user tools.</p>
+<blockquote>
+<p><strong>Important —</strong> Financial Decision Studio is a planning
+and scenario-analysis application. It is not a promise about the future,
+not tax-filing software, and not a substitute for professional
+financial, tax, legal, mortgage, or insurance advice.</p>
+</blockquote>
+<hr />
+<h1 id="part-i-introduction">Part I — Introduction</h1>
+<h2 id="what-financial-decision-studio-is">1. What Financial Decision
+Studio is</h2>
+<p>Financial Decision Studio is a personal financial-planning
+application contained in a single self-contained HTML file. It builds a
+monthly projection of a household’s finances and balance sheet, then
+lets you compare alternative decisions under explicit assumptions.</p>
+<p>The model can represent, among other things:</p>
+<ul>
+<li>cash and liquid investments;</li>
+<li>income and expenses;</li>
+<li>renting, a primary home, and a mortgage;</li>
+<li>additional properties;</li>
+<li>other liabilities;</li>
+<li>financial goals;</li>
+<li>scheduled life events;</li>
+<li>configured insurance premiums and benefits;</li>
+<li>reserve, surplus-investment, and rebalancing policies;</li>
+<li>taxes through the available tax packs;</li>
+<li>alternative scenarios;</li>
+<li>parametric Monte Carlo simulation;</li>
+<li>robustness, sensitivity, and attribution analysis;</li>
+<li><strong>Actual vs plan</strong> tracking;</li>
+<li>a double-entry accounting ledger that makes financial movements
+auditable.</li>
+</ul>
+<p>Its purpose is not to produce one magical answer. It is designed to
+help answer questions such as:</p>
+<ul>
+<li>Can I genuinely afford this home without destroying my liquidity
+buffer?</li>
+<li>Should I direct a fixed monthly amount toward mortgage prepayment or
+investments?</li>
+<li>How sensitive is a Rent-vs-Buy decision to the mortgage rate, rent,
+expected return, or home appreciation?</li>
+<li>Is my wealth goal achievable only in the central case, or does it
+remain plausible under uncertainty?</li>
+<li>After one year, is reality ahead of or behind the plan—and how
+should I update the future without rewriting the past?</li>
+</ul>
+<h2 id="product-philosophy-decisions-not-predictions">2. Product
+philosophy: decisions, not predictions</h2>
+<p>Financial Decision Studio separates three ideas that should not be
+confused.</p>
+<p><strong>Plan</strong> — your starting financial state, expected cash
+flows, assets, debts, housing, goals, and policies.</p>
+<p><strong>Scenario</strong> — a branch that changes one or more
+elements of the plan to represent an alternative decision: buy instead
+of rent, retire earlier, change LTV, raise savings, prepay a mortgage,
+and so on.</p>
+<p><strong>Simulation</strong> — the calculation of what those
+assumptions imply. The deterministic engine uses the assumptions as
+entered. Monte Carlo generates many possible paths around the stochastic
+assumptions.</p>
+<p>A forecast is often read as “this is what will happen.” A sound
+planning model asks a different question: “if these assumptions and
+behaviors are reasonable, what consequences follow, where are the
+vulnerabilities, and what would have to change for the decision to
+reverse?” Financial Decision Studio belongs to the second category.</p>
+<h2 id="local-first-offline-and-single-file-by-design">3. Local-first,
+offline, and single-file by design</h2>
+<p>The application is designed to work <strong>local-first</strong>.
+Financial calculations run in the browser, and the product does not
+require a backend or a network connection to operate. You can keep the
+HTML file on a computer or phone and open it directly.</p>
+<p>This has two practical consequences:</p>
+<ol type="1">
+<li>your plan does not need to be sent to a product server for
+calculation;</li>
+<li>browser persistence can vary, especially when the app is opened as a
+local <code>file://</code> document.</li>
+</ol>
+<p>For that reason, do not treat browser storage as your only backup.
+Keep periodic copies in <strong>Plan JSON</strong> and/or
+<strong>Portable HTML</strong> form.</p>
+<h2 id="the-essential-financial-model">4. The essential financial
+model</h2>
+<p>Before entering data, understand six distinctions.</p>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Concept</th>
+<th>Practical meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Net Worth</strong></td>
+<td>Assets minus liabilities. It includes assets that may not be
+immediately spendable, such as real estate.</td>
+</tr>
+<tr class="even">
+<td><strong>Accessible Wealth</strong></td>
+<td>Cash plus liquid investments after estimated latent capital-gains
+tax where applicable.</td>
+</tr>
+<tr class="odd">
+<td><strong>Liquid Net Worth</strong></td>
+<td>Accessible wealth minus liabilities that still economically claim
+against your wealth.</td>
+</tr>
+<tr class="even">
+<td><strong>Income</strong></td>
+<td>External economic resources entering the household, such as salary
+or pension income.</td>
+</tr>
+<tr class="odd">
+<td><strong>Expense</strong></td>
+<td>A consumed cost that reduces wealth, such as rent, interest,
+maintenance, or living expenses.</td>
+</tr>
+<tr class="even">
+<td><strong>Balance-sheet transfer</strong></td>
+<td>A movement of value from one form to another that is not, by itself,
+a consumed expense. Buying an investment or repaying mortgage principal
+are examples.</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p><strong>Example —</strong> If you move €1,000 from cash into an ETF,
+cash falls and investments rise, but you have not consumed €1,000 of
+wealth. If you pay €1,000 of rent or interest, that amount is a consumed
+cost.</p>
+</blockquote>
+<hr />
+<h1 id="part-ii-start-in-5-minutes">Part II — Start in 5 minutes</h1>
+<h2 id="the-three-first-run-paths">5. The three first-run paths</h2>
+<p>When no previously saved plan is loaded, the application offers three
+starting routes.</p>
+<h3 id="quick-decision">Quick Decision</h3>
+<p><strong>Quick Decision</strong> opens <strong>Decisions → Rent vs
+Buy</strong> immediately. Use it when your question is narrow and you do
+not yet want to build a complete household model.</p>
+<p>It is ideal for an initial controlled comparison. You can vary home
+price, rent, mortgage rate, LTV, home appreciation, and portfolio
+return. If the question becomes important enough to integrate into your
+full plan, use <strong>Create Rent / Buy scenarios</strong>.</p>
+<h3 id="explore-example">Explore example</h3>
+<p><strong>Explore example</strong> keeps the preconfigured example
+plan. This is the easiest way to learn the interface without entering
+personal data.</p>
+<p>A useful learning sequence is:</p>
+<ol type="1">
+<li>change one input at a time under <strong>Fast
+assumptions</strong>;</li>
+<li>inspect the six dashboard KPIs;</li>
+<li>open <strong>Decisions</strong> and compare branches;</li>
+<li>inspect <strong>Goals</strong>;</li>
+<li>run <strong>Lab → Risk</strong>;</li>
+<li>return to the plan and observe how each assumption changes the
+outcome.</li>
+</ol>
+<h3 id="build-my-plan">Build my plan</h3>
+<p><strong>Build my plan</strong> starts a five-step onboarding
+wizard:</p>
+<ol type="1">
+<li><strong>Household</strong> — plan name, number of adults, birth
+year, and indicative retirement year;</li>
+<li><strong>Current position</strong> — starting cash, investments,
+housing status, home value and mortgage where relevant;</li>
+<li><strong>Monthly cash flow</strong> — household net income, essential
+living costs, and rent when applicable;</li>
+<li><strong>Main goal</strong> — wealth target, years to target, and
+goal importance;</li>
+<li><strong>Assumptions review</strong> — horizon, inflation, and
+expected global-equity return.</li>
+</ol>
+<p>The wizard deliberately asks for only decision-critical information.
+You can add detailed assets, liabilities, properties, events, policies,
+and advanced assumptions afterward.</p>
+<h2 id="recommended-path-for-a-new-user">6. Recommended path for a new
+user</h2>
+<p>For most users, the best sequence is:</p>
+<ol type="1">
+<li>Open <strong>Explore example</strong> for a few minutes.</li>
+<li>Use <strong>Build my plan</strong> to create a rough personal
+baseline.</li>
+<li>Stay in <strong>Simple</strong> mode until the headline numbers make
+sense.</li>
+<li>Switch to <strong>Detailed</strong> and improve income, expenses,
+investments, and housing.</li>
+<li>Add one meaningful <strong>Goal</strong>.</li>
+<li>Check <strong>Liquidity Runway</strong> before optimizing
+anything.</li>
+<li>Create a decision branch in <strong>Decisions</strong>.</li>
+<li>Run <strong>Lab → Risk</strong> only after the deterministic
+baseline is sensible.</li>
+<li>Use <strong>Sensitivity</strong> or <strong>Robustness</strong> to
+see what assumptions matter.</li>
+<li>Export a <strong>Portable HTML</strong> or <strong>Plan
+JSON</strong> backup.</li>
+</ol>
+<p>This sequence is intentionally progressive. A complex model entered
+badly is less useful than a simple model entered carefully.</p>
+<h2 id="finding-your-way-around-the-interface">6.1 Finding your way
+around the interface</h2>
+<p>The five main areas are:</p>
+<ul>
+<li><strong>Plan</strong> — baseline, KPIs, fast assumptions, detailed
+entities, and Actual vs plan;</li>
+<li><strong>Decisions</strong> — scenarios and decision templates;</li>
+<li><strong>Goals</strong> — deterministic goal status and funding
+diagnostics;</li>
+<li><strong>Optimize</strong> — bounded deterministic solvers;</li>
+<li><strong>Lab</strong> — Risk, Robustness, Sensitivity, Attribution,
+Ledger, Data, and Audit.</li>
+</ul>
+<p>On desktop these appear in the left navigation. On narrow mobile
+screens they appear in the bottom navigation.</p>
+<p>The header also provides:</p>
+<ul>
+<li>validation status;</li>
+<li>Undo and Redo when available;</li>
+<li>current save state;</li>
+<li><strong>Share</strong>;</li>
+<li><strong>Export</strong>;</li>
+<li>theme toggle;</li>
+<li>the <strong>⋯</strong> data/settings menu.</li>
+</ul>
+<hr />
+<h1 id="part-iii-building-your-plan">Part III — Building your plan</h1>
+<h2 id="simple-detailed-and-expert">7. Simple, Detailed, and Expert</h2>
+<p>Financial Decision Studio uses progressive disclosure so that the
+financial model can be rich without forcing every user to confront every
+field.</p>
+<h3 id="simple">Simple</h3>
+<p><strong>Simple</strong> exposes the six KPIs, charts, and
+<strong>Fast assumptions</strong>. It is the correct mode for an initial
+baseline or quick adjustment.</p>
+<p>Fast assumptions include controls such as:</p>
+<ul>
+<li>analysis horizon;</li>
+<li>starting cash;</li>
+<li>monthly income;</li>
+<li>essential living costs;</li>
+<li>housing strategy;</li>
+<li>rent or home price;</li>
+<li>mortgage rate and LTV when buying;</li>
+<li>expected equity return;</li>
+<li>inflation;</li>
+<li>minimum cash reserve;</li>
+<li>additional net cash flow.</li>
+</ul>
+<p>Use Simple to answer “is the overall model directionally
+sensible?”</p>
+<h3 id="detailed">Detailed</h3>
+<p><strong>Detailed</strong> adds the normal entity editors,
+including:</p>
+<ul>
+<li>income and expenses;</li>
+<li>investment portfolio;</li>
+<li>housing and mortgage;</li>
+<li><strong>Actual vs plan</strong>.</li>
+</ul>
+<p>It is the default level for building a serious personal plan.</p>
+<h3 id="expert">Expert</h3>
+<p><strong>Expert</strong> does not change the financial state simply by
+being selected. It tells you where the deeper model lives: <strong>Lab →
+Data / Audit</strong> and <strong>Expert plan JSON</strong>.</p>
+<p>Use Expert only when you need features such as additional properties,
+other liabilities, life events, policies, the full correlation matrix,
+advanced goal fields, or configuration that is not exposed in the
+standard forms.</p>
+<h2 id="household">8. Household</h2>
+<p>The household model defines the people represented in the plan. Basic
+onboarding captures the principal adult information, while <strong>Lab →
+Data → Household members</strong> allows additional household
+entries.</p>
+<p>Typical fields include:</p>
+<ul>
+<li>ID and name;</li>
+<li>role;</li>
+<li>birth year;</li>
+<li>retirement year.</li>
+</ul>
+<p>The household model is not an actuarial family model. Birth and
+retirement dates help organize planning timelines and retirement
+scenario creation, but the current version does not model full
+longevity, survivor, dependency, long-term-care, or household
+demographic transitions automatically.</p>
+<h2 id="starting-cash">9. Starting Cash</h2>
+<p>Starting cash represents immediately available cash at the beginning
+of the projection.</p>
+<p>Do not include the same money twice—for example once as cash and
+again as an investment holding.</p>
+<p>Starting cash plays several roles:</p>
+<ul>
+<li>pays initial costs;</li>
+<li>protects the emergency reserve;</li>
+<li>funds mandatory obligations;</li>
+<li>provides the source for optional investments or prepayments when the
+reserve rule allows;</li>
+<li>affects <strong>Liquidity Runway</strong> and path feasibility.</li>
+</ul>
+<p>A high Net Worth with very little cash may still produce an unsafe
+plan if obligations cannot be funded at the right time.</p>
+<h2 id="accounts-assets-and-positions">10. Accounts, Assets, and
+Positions</h2>
+<p>The model distinguishes three layers.</p>
+<p><strong>Account</strong> — where value is held. The supported account
+semantics in this release are cash and taxable-investment accounts.</p>
+<p><strong>Asset</strong> — the investment type and its economic
+assumptions: expected return, volatility, fee, return mode, distribution
+yield, and asset class.</p>
+<p><strong>Position / Holding</strong> — a specific holding of an asset
+in an account, with its own market value, cost basis, and target
+weight.</p>
+<p>This distinction matters because two positions in the same asset may
+have different cost bases. The canonical plan preserves position
+identity rather than assuming that every unit of the same asset is one
+indistinguishable lot.</p>
+<h3 id="asset-editor-fields">10.1 Asset editor fields</h3>
+<p>The normal asset editor exposes the fields needed to model a liquid
+investment holding. Depending on the entity, these include:</p>
+<ul>
+<li>name;</li>
+<li>asset class;</li>
+<li>account;</li>
+<li>opening market value;</li>
+<li>cost basis;</li>
+<li>target allocation;</li>
+<li>expected annual return;</li>
+<li>annual volatility;</li>
+<li>fee rate;</li>
+<li>return mode;</li>
+<li>distribution yield.</li>
+</ul>
+<p>Expected return and volatility are assumptions, not historical facts
+and not promises.</p>
+<h3 id="total-return-vs-price-return-distributions">10.2 Total return vs
+Price return + distributions</h3>
+<p>The engine supports two economically distinct return conventions.</p>
+<p><strong>Total return</strong> means the expected return already
+includes distributions. In this mode, explicit distribution yield must
+not be added again.</p>
+<p><strong>Price return + distributions</strong> treats price
+appreciation and distributions separately.</p>
+<blockquote>
+<p><strong>Attention —</strong> Do not enter a total-return assumption
+and also add a distribution yield for the same asset. The validator is
+designed to prevent return double counting.</p>
+</blockquote>
+<h3 id="cost-basis">10.3 Cost basis</h3>
+<p><strong>Cost basis</strong> is the tax basis associated with a
+position. It matters when the model estimates capital-gains tax on a
+taxable sale.</p>
+<p>A €100,000 investment with €100,000 cost basis is very different,
+from a liquidation perspective, from a €100,000 investment with €40,000
+cost basis.</p>
+<p>The current model preserves cost basis at position level, but it is
+not a full transaction-by-transaction tax-lot engine.</p>
+<h2 id="income">11. Income</h2>
+<p>Income streams represent resources entering the household from
+outside the existing balance sheet.</p>
+<p>Typical properties include:</p>
+<ul>
+<li>amount;</li>
+<li>frequency;</li>
+<li>start and end timing;</li>
+<li>growth;</li>
+<li>person association;</li>
+<li>tax mode: <strong>net</strong> or <strong>gross</strong>.</li>
+</ul>
+<p>Supported frequencies include monthly, quarterly, annual, and
+one-time schedules where configured.</p>
+<p>Use <strong>net</strong> when the amount is already after tax and you
+do not want the tax pack to calculate tax on it. Use
+<strong>gross</strong> only when the simplified tax model is appropriate
+for that stream.</p>
+<blockquote>
+<p><strong>Important —</strong> Do not use income as a hidden balancing
+plug. If you want to compare “what if I earn €500 more per month?”, that
+is a legitimate external-resource scenario. If you want to reallocate
+existing cash, use investment, prepayment, or policy controls
+instead.</p>
+</blockquote>
+<h2 id="expenses">12. Expenses</h2>
+<p>Expense streams are consumed household costs. They can be essential
+or discretionary and can grow over time.</p>
+<p>Examples include:</p>
+<ul>
+<li>food and utilities;</li>
+<li>transportation;</li>
+<li>recurring subscriptions;</li>
+<li>childcare;</li>
+<li>recurring health costs;</li>
+<li>other living expenses.</li>
+</ul>
+<p>An expense is not the same thing as every cash outflow. Buying an
+investment and repaying debt principal also use cash, but they are
+balance-sheet transfers rather than consumed expenses.</p>
+<h2 id="housing-renting">13. Housing — renting</h2>
+<p>When <strong>Housing strategy</strong> is set to
+<strong>Rent</strong>, the model can represent:</p>
+<ul>
+<li>monthly rent;</li>
+<li>rent growth;</li>
+<li>deposit expressed in months of rent;</li>
+<li>initial transaction costs;</li>
+<li>other monthly housing cost;</li>
+<li>configured deposit loss;</li>
+<li>advanced lease-end timing when configured through expert data.</li>
+</ul>
+<p>A security deposit is treated as an asset while recoverable. It is
+not automatically treated as an expense on payment. At settlement, the
+recovered portion returns to cash and any configured lost portion
+becomes an expense.</p>
+<p>Do not confuse the focused <strong>Rent vs Buy</strong> decision
+model with the full household rent model. The former is a controlled
+decision tool; the latter is part of the canonical plan.</p>
+<h2 id="housing-ownership-and-mortgage">14. Housing — ownership and
+mortgage</h2>
+<p>When <strong>Housing strategy</strong> is <strong>Own / buy</strong>,
+the model can represent:</p>
+<ul>
+<li>home price or current home value;</li>
+<li>purchase costs;</li>
+<li>LTV for a new purchase;</li>
+<li>mortgage rate and term;</li>
+<li>current mortgage balance and remaining term for an existing
+home;</li>
+<li>maintenance rate;</li>
+<li>property tax assumption;</li>
+<li>annual insurance;</li>
+<li>home appreciation;</li>
+<li>sale cost rate;</li>
+<li>explicit sale/disposal tax assumption where relevant;</li>
+<li>optional extra principal payments.</li>
+</ul>
+<h3 id="new-purchase-vs-already-owned-home">14.1 New purchase vs
+already-owned home</h3>
+<p>The acquisition mode matters.</p>
+<p>For a <strong>new purchase</strong>, LTV can determine the financing
+structure.</p>
+<p>For an <strong>existing home</strong>, current mortgage balance and
+remaining term are the relevant debt state. Changing the historical LTV
+does not economically refinance an existing loan. This is why some
+Optimize tools display <strong>New-purchase scenario required</strong>
+for an already-owned home.</p>
+<h3 id="principal-and-interest">14.2 Principal and interest</h3>
+<p>A mortgage payment contains two economically different
+components:</p>
+<ul>
+<li><strong>interest</strong> is a consumed financing expense;</li>
+<li><strong>principal</strong> reduces cash and reduces the liability by
+the same amount.</li>
+</ul>
+<p>Therefore principal repayment does not reduce Net Worth
+dollar-for-dollar. It converts liquid assets into home equity by
+extinguishing debt.</p>
+<h3 id="extra-principal">14.3 Extra principal</h3>
+<p>Extra mortgage principal is an optional allocation. It is subject to
+the reserve logic: the model should not consume protected emergency
+reserves for an optional prepayment unless the configured policy permits
+it.</p>
+<h2 id="additional-properties">15. Additional Properties</h2>
+<p>Additional properties are managed under <strong>Lab → Data →
+Additional properties</strong>.</p>
+<p>They are intended for rental properties, second homes, or other
+modeled real-estate assets. Depending on configuration, fields may
+include:</p>
+<ul>
+<li>current or purchase value;</li>
+<li>appreciation;</li>
+<li>monthly rental income;</li>
+<li>operating costs;</li>
+<li>linked debt;</li>
+<li>sale month;</li>
+<li>sale transaction costs;</li>
+<li>explicit disposal-tax assumption.</li>
+</ul>
+<p>When a property is sold, the engine treats sale proceeds, transaction
+costs, disposal tax, and linked-debt payoff as separate economic
+components. A debt linked to the property should be settled exactly
+once.</p>
+<blockquote>
+<p><strong>Attention —</strong> Real-estate taxes, legal costs,
+transaction rules, and country-specific disposal taxation can be
+complex. Entering a simplified assumption does not make the model a
+legal or tax calculator.</p>
+</blockquote>
+<h2 id="liabilities-other-debt">16. Liabilities — other debt</h2>
+<p>Use <strong>Lab → Data → Other liabilities</strong> for loans and
+debt beyond the primary mortgage.</p>
+<p>Typical fields include:</p>
+<ul>
+<li>principal;</li>
+<li>annual interest rate;</li>
+<li>term in months;</li>
+<li>payment timing;</li>
+<li>linkage to another modeled entity where supported.</li>
+</ul>
+<p>Debt is economically important for both Net Worth and Liquid Net
+Worth. A liability does not disappear merely because the borrowed cash
+has already been spent.</p>
+<p>Unsupported or invalid debt structures are better blocked than
+silently approximated.</p>
+<h2 id="goals">17. Goals</h2>
+<p>Goals define what the plan is trying to accomplish.</p>
+<p>The standard goal editor is designed around:</p>
+<ul>
+<li>name;</li>
+<li>metric type;</li>
+<li>priority;</li>
+<li>target value;</li>
+<li>target month;</li>
+<li>value basis;</li>
+<li>inflation linkage where available.</li>
+</ul>
+<p>Advanced goal fields, including a separate
+<strong>minimumValue</strong>, may require Expert JSON rather than the
+standard Goal form.</p>
+<p>Goal semantics are explained fully in Part VI.</p>
+<h2 id="events-life-events">18. Events — life events</h2>
+<p><strong>Lab → Data → Life events</strong> supports scheduled,
+potentially multi-action events.</p>
+<p>Events are useful for situations such as:</p>
+<ul>
+<li>a future cash inflow;</li>
+<li>a large one-time cost;</li>
+<li>an investment action;</li>
+<li>a debt prepayment;</li>
+<li>a combination of actions representing one life event.</li>
+</ul>
+<p>The engine uses atomic/preflight semantics for mandatory event
+funding where applicable. It should not post part of a required event
+and then leave the financial state inconsistent because the rest cannot
+be funded.</p>
+<p>Timing matters. Events can be associated with the model’s monthly
+ordering and advanced start/end-of-month semantics where configured.</p>
+<h2 id="insurance-protection">19. Insurance &amp; protection</h2>
+<p><strong>Lab → Data → Insurance &amp; protection</strong> can
+represent configured insurance premiums and event-triggered
+benefits.</p>
+<p>This is a financial cash-flow representation, not a policy-valuation
+engine. It does not automatically determine whether your coverage is
+sufficient, price insurance risk, model underwriting, or interpret
+policy wording.</p>
+<p>Use it to include known premium and benefit mechanics in a plan—not
+as a replacement for insurance analysis.</p>
+<h2 id="financial-policies">20. Financial Policies</h2>
+<p><strong>Lab → Data → Financial policies</strong> contains rules that
+alter how surplus liquidity is handled.</p>
+<h3 id="reserve">Reserve</h3>
+<p>Defines the protected minimum cash buffer, usually expressed in
+months of essential outflow.</p>
+<h3 id="invest-surplus">Invest surplus</h3>
+<p>Determines whether eligible cash above the reserve is invested and
+what proportion is allocated.</p>
+<h3 id="rebalance">Rebalance</h3>
+<p>Controls periodic portfolio rebalancing, including frequency and
+tolerance/band assumptions.</p>
+<p>The preferred logic is economically conservative: use incoming cash
+to fill underweights before selling taxable positions, and do not
+consume protected reserves for optional allocation.</p>
+<h2 id="assumptions-and-tax-packs">21. Assumptions and tax packs</h2>
+<p>Open <strong>Lab → Data → Assumptions &amp; tax pack</strong> to
+inspect the active tax pack and major assumptions.</p>
+<h3 id="generic-user-net-inputs">Generic / user-net inputs</h3>
+<p>The generic tax pack performs no automatic income-tax calculation. It
+is appropriate when you enter net cash flows directly or want tax
+handling to remain external to the model.</p>
+<h3 id="italy-2026-planning-pack">Italy 2026 planning pack</h3>
+<p>The Italy 2026 pack is explicitly a <strong>planning
+approximation</strong>. It uses simplified national IRPEF brackets and
+generic financial-tax assumptions, plus simplified
+mortgage-interest-credit logic.</p>
+<p>It does <strong>not</strong> fully model:</p>
+<ul>
+<li>regional surtaxes;</li>
+<li>municipal surtaxes;</li>
+<li>all deductions and tax credits;</li>
+<li>income-category-specific rules;</li>
+<li>every high-income interaction;</li>
+<li>instrument-specific taxation;</li>
+<li>preferential sovereign-debt tax rates;</li>
+<li>all mortgage eligibility conditions;</li>
+<li>future tax-law changes.</li>
+</ul>
+<p>If the plan extends beyond the pack’s effective period, the
+application warns that the configured hold-last assumption is being
+used.</p>
+<h2 id="correlation-matrix">22. Correlation matrix</h2>
+<p><strong>Edit asset correlation matrix</strong> controls the
+correlation assumptions used by the stochastic engine.</p>
+<p>Correlation values must be mathematically valid. The engine checks
+properties such as:</p>
+<ul>
+<li>matching dimensions;</li>
+<li>unique driver IDs;</li>
+<li>diagonal values of 1;</li>
+<li>symmetry;</li>
+<li>values between -1 and +1;</li>
+<li>positive-semidefinite validity.</li>
+</ul>
+<p>A perfectly correlated singular matrix can be mathematically valid;
+the engine is designed to support valid PSD cases rather than requiring
+strict positive definiteness.</p>
+<p>Stable stochastic drivers are identified semantically rather than by
+UI order. Reordering assets or adding an unused stochastic asset should
+not change the random world experienced by existing active drivers.</p>
+<hr />
+<h1 id="part-iv-dashboard-and-kpis">Part IV — Dashboard and KPIs</h1>
+<h2 id="projected-net-worth">23. Projected Net Worth</h2>
+<h3 id="what-it-means">What it means</h3>
+<p><strong>Projected Net Worth</strong> is the final projected value of
+assets minus liabilities at the end of the analysis horizon.</p>
+<p>It can include cash, investments, property, recoverable deposits, and
+other modeled assets, less mortgages and other debt.</p>
+<h3 id="how-it-is-used">How it is used</h3>
+<p>It is a long-horizon balance-sheet measure and a useful common
+outcome for scenario comparison.</p>
+<h3 id="how-to-interpret-it">How to interpret it</h3>
+<p>Higher is usually better <strong>all else equal</strong>, but all
+else is rarely equal. A plan with higher terminal wealth may involve
+more liquidity risk, leverage, volatility, or lifestyle sacrifice.</p>
+<h3 id="watch-out-for">Watch out for</h3>
+<p>Do not treat terminal Net Worth as a complete decision score. Always
+read it alongside liquidity, goal status, risk, and the assumptions
+needed to produce it.</p>
+<h2 id="liquid-net-worth">24. Liquid Net Worth</h2>
+<h3 id="what-it-means-1">What it means</h3>
+<p><strong>Liquid Net Worth</strong> is the model’s debt-aware measure
+of immediately or reasonably accessible wealth.</p>
+<p>Conceptually it starts from:</p>
+<ul>
+<li>cash;</li>
+<li>liquid investments after estimated latent tax where applicable;</li>
+</ul>
+<p>and then subtracts outstanding liabilities that remain claims against
+your wealth.</p>
+<h3 id="how-to-interpret-it-1">How to interpret it</h3>
+<p>It answers a different question from Net Worth: “how strong is my
+financial position if I focus on wealth that can support obligations
+without relying on the gross value of illiquid assets?”</p>
+<h3 id="watch-out-for-1">Watch out for</h3>
+<p>A household can have substantial Net Worth and weak Liquid Net
+Worth—for example when most wealth is tied up in a mortgaged home.</p>
+<h2 id="primary-goal">25. Primary Goal</h2>
+<h3 id="what-it-means-2">What it means</h3>
+<p>The <strong>Primary Goal</strong> KPI displays the funding ratio of
+the first goal returned by the plan, along with its priority and
+deterministic status.</p>
+<h3 id="how-to-interpret-it-2">How to interpret it</h3>
+<p>A value around 100% means the modeled metric at the goal date is
+around the target. Above 100% indicates a modeled surplus relative to
+the target; below 100% indicates a shortfall.</p>
+<h3 id="watch-out-for-2">Watch out for</h3>
+<p>This is a deterministic ratio, not a Monte Carlo probability. A goal
+can look fully funded in the central projection but still have a
+meaningful failure probability under stochastic paths.</p>
+<h2 id="liquidity-runway">26. Liquidity Runway</h2>
+<h3 id="what-it-means-3">What it means</h3>
+<p><strong>Liquidity Runway</strong> estimates how many months of
+essential outflow could be covered by accessible wealth under the
+model’s current state.</p>
+<h3 id="how-to-interpret-it-3">How to interpret it</h3>
+<p>Think of it as a resilience indicator. A longer runway generally
+means more ability to absorb shocks or timing mismatches.</p>
+<h3 id="what-it-does-not-mean">What it does NOT mean</h3>
+<p>It is not a guarantee that every future obligation can be funded. A
+large one-time payment can still create a path failure even when average
+monthly runway looks healthy.</p>
+<h3 id="risk-signal">Risk signal</h3>
+<p>The dashboard visually treats short runway as a warning condition. Do
+not optimize terminal wealth while ignoring a fragile funding path.</p>
+<h2 id="debt-free">27. Debt Free</h2>
+<h3 id="what-it-means-4">What it means</h3>
+<p><strong>Debt Free</strong> shows the first projected month after the
+start when modeled total debt falls below the engine’s near-zero
+threshold.</p>
+<h3 id="how-to-interpret-it-4">How to interpret it</h3>
+<p>It gives a simple timing milestone for debt elimination.</p>
+<h3 id="watch-out-for-3">Watch out for</h3>
+<p>The absence of debt is not automatically an optimal objective. Cheap
+debt, liquidity needs, taxes, and investment opportunity cost can all
+matter.</p>
+<h2 id="plan-status">28. Plan Status</h2>
+<p>The application derives an explicit plan status rather than using one
+ambiguous wealth number.</p>
+<p>Typical states include:</p>
+<ul>
+<li><strong>Incomplete</strong> — blocking validation prevents a valid
+simulation;</li>
+<li><strong>Off track</strong> — deterministic failure or required-goal
+failure;</li>
+<li><strong>Needs attention</strong> — a required target is
+marginal;</li>
+<li><strong>At risk</strong> — the deterministic plan works but Monte
+Carlo goal success falls below the configured threshold;</li>
+<li><strong>On track</strong> — required conditions are currently
+satisfied.</li>
+</ul>
+<blockquote>
+<p><strong>Important —</strong> Risk status only reflects the most
+recent stochastic result currently associated with the plan. After a
+material plan change, rerun <strong>Lab → Risk</strong> before relying
+on Monte Carlo-based status.</p>
+</blockquote>
+<h2 id="charts-on-the-plan-page">29. Charts on the Plan page</h2>
+<h3 id="wealth-trajectory">Wealth trajectory</h3>
+<p>Shows how wealth evolves through time. Use it to identify inflection
+points, drawdowns, debt payoff effects, retirement transitions, or the
+impact of large events.</p>
+<h3 id="balance-sheet-composition">Balance-sheet composition</h3>
+<p>Shows the changing composition of assets and debt. Two plans with
+identical terminal Net Worth can have very different paths and
+balance-sheet structures.</p>
+<p>Charts are exploratory aids. Always confirm a surprising visual
+result with the underlying KPIs or ledger.</p>
+<hr />
+<h1 id="part-v-decisions">Part V — Decisions</h1>
+<h2 id="baseline-and-scenarios">30. Baseline and scenarios</h2>
+<p>The <strong>Baseline</strong> is the reference plan. Scenarios are
+branches that inherit from an ancestor and store changes as patches.</p>
+<p>A scenario can therefore represent a decision without duplicating the
+entire household state.</p>
+<p>The Scenario manager shows, for each branch:</p>
+<ul>
+<li>Net Worth;</li>
+<li>Liquid wealth;</li>
+<li>goal funding;</li>
+<li>minimum runway;</li>
+<li>feasibility status.</li>
+</ul>
+<p>Selecting a scenario makes it active across the application.</p>
+<blockquote>
+<p><strong>Important —</strong> A branch inherits from its parent. If
+the baseline changes later, a child scenario can change too unless a
+field is explicitly overridden by that scenario. <strong>Branch</strong>
+is therefore a more accurate mental model than a frozen clone.</p>
+</blockquote>
+<h2 id="creating-a-scenario">31. Creating a scenario</h2>
+<p>Use <strong>+ Scenario</strong> to create a new alternative or
+<strong>Branch</strong> to create a child from an existing scenario.</p>
+<p>A good scenario changes only the variables required to represent a
+decision. If you change salary, spending, home price, returns, and goal
+at the same time, you may no longer know what caused the difference.</p>
+<p>Use clear names such as:</p>
+<ul>
+<li><code>Baseline</code>;</li>
+<li><code>Buy 80% LTV</code>;</li>
+<li><code>Remain renter</code>;</li>
+<li><code>Prepay €500</code>;</li>
+<li><code>Retire 2038</code>.</li>
+</ul>
+<h2 id="the-fair-comparison-principle">32. The fair-comparison
+principle</h2>
+<p>A valid financial comparison should keep initial resources and
+external assumptions equal unless the decision itself changes them.</p>
+<p>For example, comparing mortgage prepayment with investing is unfair
+if one branch receives an additional €500 per month from outside the
+household while the other merely reallocates existing cash.</p>
+<p>Financial Decision Studio’s decision templates are designed around
+resource conservation where appropriate.</p>
+<h2 id="rent-vs-buy">33. Rent vs Buy</h2>
+<p>The focused <strong>Rent vs Buy</strong> tool is a controlled housing
+decision model. It exposes variables such as:</p>
+<ul>
+<li>Home price;</li>
+<li>Monthly rent;</li>
+<li>Mortgage rate;</li>
+<li>Loan-to-value;</li>
+<li>Home appreciation;</li>
+<li>Portfolio return.</li>
+</ul>
+<p>It reports:</p>
+<ul>
+<li><strong>Rent + invest</strong> terminal wealth;</li>
+<li><strong>Buy with mortgage</strong> terminal wealth;</li>
+<li><strong>Mortgage − Rent</strong> difference;</li>
+<li>mortgage payment.</li>
+</ul>
+<p>Use <strong>Open sensitivity</strong> to inspect decision boundaries
+and <strong>Create Rent / Buy scenarios</strong> to convert the
+controlled comparison into branches of the canonical household
+model.</p>
+<p>The focused model exists for controlled comparison and
+regression-quality consistency. It is not a second full
+financial-planning engine.</p>
+<h3 id="create-rent-buy-scenarios">Create Rent / Buy scenarios</h3>
+<p>This action creates plan scenarios corresponding to the compared
+housing strategies. Use the resulting branches to bring the decision
+back into the full household model, where liquidity, goals, debt,
+taxation, and other plan elements can matter.</p>
+<h2 id="complete-example-continue-renting-vs-buy-a-home">34. Complete
+example — continue renting vs buy a home</h2>
+<p>Assume:</p>
+<ul>
+<li>home price: €250,000;</li>
+<li>rent: €900/month;</li>
+<li>mortgage rate: 3.0%;</li>
+<li>LTV: 80%;</li>
+<li>home appreciation: 2.0%;</li>
+<li>portfolio return: 6.0%;</li>
+<li>long horizon.</li>
+</ul>
+<p>A sensible workflow is:</p>
+<ol type="1">
+<li>Open <strong>Decisions → Rent vs Buy</strong>.</li>
+<li>Enter the six controlled assumptions.</li>
+<li>Compare <strong>Rent + invest</strong> and <strong>Buy with
+mortgage</strong>.</li>
+<li>Do not stop at the headline winner.</li>
+<li>Open <strong>Sensitivity</strong> and inspect the mortgage-rate ×
+rent heatmap.</li>
+<li>Look for the mortgage-rate break-even.</li>
+<li>Create Rent and Buy scenarios.</li>
+<li>Compare their <strong>Liquid Net Worth</strong>, not only terminal
+Net Worth.</li>
+<li>Run <strong>Lab → Risk</strong> on both scenarios.</li>
+<li>Use <strong>Robustness</strong> to test whether the housing
+conclusion survives assumption error.</li>
+</ol>
+<p>Suppose Buy is ahead by €40,000 in the central case, but the decision
+flips if the mortgage rate rises by 0.4 percentage points or home
+appreciation falls modestly. That is not a “strong Buy” result. It is a
+fragile central-case advantage.</p>
+<p>Conversely, if Buy remains ahead across a broad range of plausible
+rents, rates, and returns, the financial case is more robust—although
+non-financial factors still matter.</p>
+<h2 id="prepay-vs-invest">35. Prepay vs Invest</h2>
+<p>The <strong>Prepay vs Invest</strong> template becomes relevant when
+the active scenario owns a home with a mortgage.</p>
+<p>It compares:</p>
+<ul>
+<li>scheduled mortgage only;</li>
+<li>an extra principal allocation;</li>
+<li>investing the same cash allocation.</li>
+</ul>
+<p>The key phrase is <strong>the same cash allocation</strong>. The
+investment branch does not receive new external income merely to make
+the comparison work.</p>
+<p>The allocation is optional and follows the reserve rule. This makes
+the comparison economically more defensible.</p>
+<h2 id="refinance">36. Refinance</h2>
+<p><strong>Refinance</strong> is an economic screen, not an automatic
+refinancing engine.</p>
+<p>It shows items such as:</p>
+<ul>
+<li>current balance;</li>
+<li>remaining term;</li>
+<li>current rate and payment;</li>
+<li>an illustrative lower rate and payment;</li>
+<li>monthly payment difference.</li>
+</ul>
+<p>The screen deliberately warns that eligibility, fees, timing, and
+actual refinancing availability must be modeled explicitly in a scenario
+before relying on the result.</p>
+<h2 id="retirement">37. Retirement</h2>
+<p>The <strong>Retirement</strong> template helps create a branch that
+ends selected earned income and introduces pension income.</p>
+<p>A crucial design choice is that existing living expenses continue
+unless you explicitly change them. The tool does not silently assume
+that retirement spending will fall.</p>
+<p>This is a scenario template, not a full actuarial retirement-income
+engine.</p>
+<h2 id="big-purchase">38. Big Purchase</h2>
+<p><strong>Big Purchase</strong> helps compare a large one-time purchase
+through the canonical financial model.</p>
+<p>The quick editor records the purchase as a one-time essential
+expense, making it visible to the ledger and liquidity engine.</p>
+<p>For more complex life events involving several simultaneous actions,
+use Expert events under <strong>Lab → Data</strong>.</p>
+<hr />
+<h1 id="part-vi-goals">Part VI — Goals</h1>
+<h2 id="what-a-goal-can-measure">39. What a goal can measure</h2>
+<p>A goal defines a future condition that matters to you. The current
+product supports goal metrics such as wealth-oriented targets, with the
+configured metric evaluated at a specific target month.</p>
+<p>A goal is not merely a label. It participates in deterministic status
+and, for required goals, in stochastic success calculations.</p>
+<h2 id="hard-target-and-aspirational">40. Hard, Target, and
+Aspirational</h2>
+<h3 id="hard">Hard</h3>
+<p>A <strong>Hard</strong> goal is a minimum requirement. Missing it
+means the plan fails the requirement.</p>
+<p>Use Hard only for genuinely non-negotiable constraints. Making every
+preference Hard can make a realistic plan appear artificially
+impossible.</p>
+<h3 id="target">Target</h3>
+<p>A <strong>Target</strong> is the normal planning objective. It may
+contain both a desired target and, in the underlying model, a lower
+minimum threshold.</p>
+<p>A Target can therefore be fully on track, marginal, or off track
+depending on the achieved value.</p>
+<h3 id="aspirational">Aspirational</h3>
+<p>An <strong>Aspirational</strong> goal is desirable but does not
+determine overall required-goal failure.</p>
+<p>It is appropriate for stretch objectives: a larger inheritance
+target, a luxury purchase, or an upside wealth ambition that should not
+make the entire plan “fail.”</p>
+<h2 id="target-and-minimum">41. Target and minimum</h2>
+<p>The model distinguishes the desired <strong>target</strong> from an
+optional <strong>minimum</strong>.</p>
+<p>Conceptually:</p>
+<ul>
+<li>below minimum → off track;</li>
+<li>between minimum and target → marginal;</li>
+<li>at or above target → on track.</li>
+</ul>
+<p>The standard Goal editor emphasizes the target. A separate
+<code>minimumValue</code> is an advanced model field and may require
+<strong>Expert plan JSON</strong> to edit directly in this release.</p>
+<p>This distinction is valuable because many real goals are not binary.
+“€500,000 desired, €400,000 acceptable” is more informative than
+pretending that €499,999 and €400,001 mean the same thing.</p>
+<h2 id="target-month">42. Target month</h2>
+<p>Goals are evaluated at a specific future month rather than only at
+the end of the plan.</p>
+<p>A retirement capital target due in 15 years should not be considered
+successful because the plan reaches it in year 28. Timing is part of the
+goal.</p>
+<p>When rebasing the plan after an Actual Snapshot, the application
+shifts future references so that calendar intent is preserved where
+possible.</p>
+<h2 id="nominal-at-target-vs-current-purchasing-power">43. Nominal at
+target vs Current purchasing power</h2>
+<h3 id="nominal-at-target">Nominal at target</h3>
+<p>The entered amount is interpreted as the number of future currency
+units required at the target date.</p>
+<p>Example: €500,000 means €500,000 at that future date.</p>
+<h3 id="current-purchasing-power">Current purchasing power</h3>
+<p>When the corresponding value basis/inflation linkage is configured,
+the goal can instead represent today’s purchasing power, requiring the
+nominal future target to grow with inflation.</p>
+<p>Example: “I want the purchasing power of €500,000 today in 20 years”
+is a different target from “I want exactly €500,000 nominal in 20
+years.”</p>
+<p>Always check the value basis before comparing goals.</p>
+<h2 id="reading-goal-status">44. Reading goal status</h2>
+<p>A goal card shows a funding percentage and status. Interpret it in
+layers:</p>
+<ul>
+<li><strong>Funding ratio</strong> — modeled metric divided by
+target;</li>
+<li><strong>On track</strong> — deterministic result meets the
+target;</li>
+<li><strong>Marginal</strong> — above the acceptable minimum but below
+target;</li>
+<li><strong>Off track</strong> — below the required threshold.</li>
+</ul>
+<p>Then ask a second question in <strong>Lab → Risk</strong>: what
+proportion of stochastic paths achieve the required goals?</p>
+<p>A deterministic goal at 105% with low stochastic success is not a
+robustly funded goal. A deterministic goal at 95% may be close enough
+that a small, realistic policy change solves it.</p>
+<hr />
+<h1 id="part-vii-optimize">Part VII — Optimize</h1>
+<h2 id="what-optimize-actually-does">45. What Optimize actually
+does</h2>
+<p><strong>Optimize</strong> contains transparent bounded deterministic
+solvers. It does not claim to use a global evolutionary optimizer,
+NSGA-II, Differential Evolution, or a validated stochastic
+optimizer.</p>
+<p>Results are not silently applied. Where supported, you can create a
+scenario from a candidate and then test that scenario elsewhere.</p>
+<h2 id="affordable-home-price">46. Affordable home price</h2>
+<h3 id="what-it-searches-for">What it searches for</h3>
+<p>The highest modeled <strong>new-purchase</strong> home price that
+preserves the current minimum liquidity-runway constraint.</p>
+<h3 id="method">Method</h3>
+<p>A bounded deterministic price search.</p>
+<h3 id="constraints">Constraints</h3>
+<p>The solver respects the modeled liquidity path and the configured
+minimum cash/runway requirement.</p>
+<p>For an already-owned home, it can display <strong>New-purchase
+scenario required</strong>, because changing the historical purchase
+price is not a meaningful control variable for current debt.</p>
+<h3 id="how-to-interpret-it-5">How to interpret it</h3>
+<p>Treat the output as a model-implied ceiling under the current
+assumptions—not as the amount a bank will lend you and not as a
+recommendation to spend up to the limit.</p>
+<p>If the result is €320,000, a financially resilient choice may still
+be below €320,000 once you consider uncertainty, lifestyle preferences,
+job risk, and unmodeled costs.</p>
+<h2 id="ltv-search">47. LTV search</h2>
+<h3 id="what-it-searches-for-1">What it searches for</h3>
+<p>The <strong>Loan-to-value</strong> level that gives the best terminal
+objective among tested feasible leverage choices for a new purchase.</p>
+<h3 id="method-1">Method</h3>
+<p>A bounded deterministic grid search.</p>
+<h3 id="constraints-1">Constraints</h3>
+<p>Candidate LTVs must satisfy the model’s liquidity constraint. The
+objective is the configured terminal wealth measure, including terminal
+liquidation semantics when enabled.</p>
+<h3 id="how-to-interpret-it-6">How to interpret it</h3>
+<p>The “best” LTV is best only for the modeled objective under the
+current assumptions. It is not necessarily the most comfortable,
+lowest-risk, or easiest-to-finance LTV.</p>
+<p>The leverage frontier chart is often more useful than a single winner
+because it shows how terminal wealth and liquidity trade off across
+candidate LTVs.</p>
+<h2 id="required-external-monthly-capacity">48. Required external
+monthly capacity</h2>
+<h3 id="what-it-searches-for-2">What it searches for</h3>
+<p>The additional <strong>external net monthly cash flow</strong>
+required for the selected deterministic goal to be reached.</p>
+<h3 id="method-2">Method</h3>
+<p>A bounded deterministic root solve.</p>
+<h3 id="attention">Attention</h3>
+<p>This is deliberately labeled <strong>external</strong> capacity. It
+is not a reallocation of money already in the plan.</p>
+<p>If the solver returns €350/month, the interpretation is
+approximately: “under these assumptions, the plan needs about €350/month
+of additional external net resources to reach the deterministic
+goal.”</p>
+<p>Do not reinterpret that as “invest €350 that was already sitting in
+cash” unless you explicitly model that reallocation instead.</p>
+<h2 id="after-optimize">49. After Optimize</h2>
+<p>Optimization should be the start of validation, not the end.</p>
+<p>For any candidate:</p>
+<ol type="1">
+<li>create the scenario;</li>
+<li>inspect <strong>Liquidity Runway</strong>;</li>
+<li>compare Net Worth and Liquid Net Worth;</li>
+<li>run <strong>Lab → Risk</strong>;</li>
+<li>use Sensitivity or Robustness where relevant;</li>
+<li>ask whether the result still makes sense under less favorable
+assumptions.</li>
+</ol>
+<p>The product explicitly warns that its solvers are deterministic and
+that selected candidates should be stress-tested before adoption.</p>
+<hr />
+<h1 id="part-viii-lab">Part VIII — Lab</h1>
+<h2 id="risk-monte-carlo">50. Risk / Monte Carlo</h2>
+<h3 id="what-monte-carlo-is">50.1 What Monte Carlo is</h3>
+<p><strong>Lab → Risk</strong> runs a parametric Monte Carlo simulation
+using correlated asset shocks, configured property volatility, stable
+random seeds, and pathwise liquidity failure.</p>
+<p>It asks: “given the model and stochastic assumptions, what
+distribution of outcomes is generated across many simulated paths?”</p>
+<p>It does <strong>not</strong> ask: “what will the market actually
+do?”</p>
+<h3 id="paths">50.2 Paths</h3>
+<p><strong>Paths</strong> is the number of simulated futures.</p>
+<p>The UI allows path counts from 500 upward. More paths reduce sampling
+noise but require more computation.</p>
+<p>Practical use:</p>
+<ul>
+<li>~500: quick iteration;</li>
+<li>~2,000: normal analysis;</li>
+<li>~5,000 or more: deeper validation when the device handles it
+comfortably.</li>
+</ul>
+<p>Do not interpret tiny percentage differences as meaningful when path
+counts are modest.</p>
+<h3 id="seed">50.3 Seed</h3>
+<p>The <strong>Seed</strong> controls reproducibility. With the same
+plan, same seed, and same stochastic assumptions, the model can
+reproduce the same random experiment.</p>
+<p>This is especially important when comparing scenarios. The engine
+uses stable driver-keyed Common Random Numbers so that scenario A and
+scenario B experience the same exogenous stochastic world where
+appropriate.</p>
+<p>Changing asset display order should not give one scenario “luckier
+markets” than another.</p>
+<h3 id="median-terminal">50.4 Median terminal</h3>
+<p><strong>Median terminal</strong> is the 50th percentile of the
+unconditional terminal wealth distribution.</p>
+<p>Half of simulated terminal outcomes lie below it and half above
+it.</p>
+<p>It is not the same as the expected value and not a guarantee.</p>
+<h3 id="p10-p90-and-percentiles">50.5 P10 / P90 and percentiles</h3>
+<p>A percentile is a location in the simulated distribution.</p>
+<ul>
+<li><strong>P10</strong> — 10% of paths finish at or below this
+level;</li>
+<li><strong>P50</strong> — median;</li>
+<li><strong>P90</strong> — 90% of paths finish at or below this
+level.</li>
+</ul>
+<p>The P10–P90 range is useful for understanding dispersion without
+focusing only on extreme tails.</p>
+<h3 id="goal-success">50.6 Goal success</h3>
+<p><strong>Goal success</strong> is the fraction of simulated paths
+satisfying the required goal semantics.</p>
+<p>The UI also reports a <strong>95% Wilson confidence
+interval</strong>. This interval reflects statistical uncertainty from a
+finite number of simulated paths. It does not represent all real-world
+model uncertainty.</p>
+<p>Aspirational goals do not incorrectly turn the whole plan into a
+required-goal failure.</p>
+<h3 id="liquidity-failure">50.7 Liquidity failure</h3>
+<p><strong>Liquidity failure</strong> is the fraction of simulated paths
+in which a mandatory obligation cannot be funded under the model’s
+funding rules.</p>
+<p>This is often more decision-relevant than terminal wealth. A path
+that becomes insolvent in year 8 should not be treated as successful
+merely because a hypothetical year-30 asset value would have been
+high.</p>
+<h3 id="p5-minimum-liquidity">50.8 P5 minimum liquidity</h3>
+<p>This metric summarizes a lower-tail measure of the minimum liquidity
+observed across paths.</p>
+<p>Use it to ask whether the plan becomes dangerously thin in adverse
+paths even if the median outcome looks comfortable.</p>
+<h3 id="max-drawdown">50.9 Max drawdown</h3>
+<p>The Risk screen reports median and upper-tail maximum drawdown
+statistics.</p>
+<p>Drawdown measures decline from a prior peak. It helps describe path
+pain and volatility, not just final wealth.</p>
+<h3 id="outcome-distribution">50.10 Outcome distribution</h3>
+<p>The histogram shows the terminal outcome distribution for the active
+scenario.</p>
+<p>If liquidity failures occur, failed paths remain part of the
+unconditional outcome accounting and failure is reported separately. The
+UI may also show a survivor-only median.</p>
+<p>Never look only at the survivor number; doing so can hide the paths
+that failed.</p>
+<h3 id="fan-chart">50.11 Fan chart</h3>
+<p>The <strong>Fan chart</strong> displays wealth percentile bands over
+time, including P5–P95 ranges for the active stochastic result.</p>
+<p>It is useful for seeing when uncertainty widens and when the plan
+becomes most exposed.</p>
+<p>The fan chart is not a confidence band around one forecast. It is a
+visual summary of simulated path distributions under the model.</p>
+<blockquote>
+<p><strong>Important —</strong> After materially changing a plan or
+scenario, rerun Monte Carlo. Do not assume an old Risk result still
+describes the new configuration.</p>
+</blockquote>
+<h2 id="robustness">51. Robustness</h2>
+<p><strong>Lab → Robustness</strong> is currently a focused Rent-vs-Buy
+assumption-uncertainty analysis.</p>
+<p>It generates 1,000 deterministic assumption states around the current
+controlled housing comparison. This is intentionally different from
+Monte Carlo path risk.</p>
+<p>Monte Carlo asks: “what happens across stochastic market/property
+paths?”</p>
+<p>Robustness asks: “does the decision survive plausible error in the
+assumptions themselves?”</p>
+<h3 id="indicators">Indicators</h3>
+<p>The screen includes measures such as:</p>
+<ul>
+<li><strong>Buy win rate</strong> — fraction of sampled assumption
+states in which Buy beats Rent;</li>
+<li><strong>Median Buy − Rent</strong> — median decision advantage;</li>
+<li><strong>P5 / P95 decision delta</strong> — spread of the decision
+difference;</li>
+<li>decision-critical assumptions ranked by correlation with the
+outcome;</li>
+<li>base-case winner;</li>
+<li>robust winner;</li>
+<li>ambiguity band;</li>
+<li>sample count.</li>
+</ul>
+<p>The UI may display a <strong>regret proxy</strong>. Treat it exactly
+as labeled: a proxy within this controlled decision analysis, not a
+universal formal regret-optimization framework.</p>
+<p>A useful interpretation:</p>
+<ul>
+<li>Buy win rate &gt;70% → Buy is comparatively robust in the sampled
+region;</li>
+<li>Buy win rate &lt;30% → Rent is comparatively robust;</li>
+<li>30–70% → no dominant choice; the answer is
+assumption-sensitive.</li>
+</ul>
+<p>These are interpretation aids, not laws of decision theory.</p>
+<h2 id="sensitivity">52. Sensitivity</h2>
+<p><strong>Lab → Sensitivity</strong> provides a controlled Rent-vs-Buy
+sensitivity analysis.</p>
+<p>The current heatmap varies:</p>
+<ul>
+<li>mortgage rate on one axis;</li>
+<li>monthly rent on the other.</li>
+</ul>
+<p>Each cell represents:</p>
+<p><strong>Buy with mortgage Net Worth − Rent + invest Net
+Worth</strong>.</p>
+<p>Positive cells favor Buy in the controlled model; negative cells
+favor Rent.</p>
+<h3 id="break-even">Break-even</h3>
+<p>The <strong>Mortgage-rate break-even</strong> identifies rate values
+at which the modeled Rent-vs-Buy advantage crosses zero.</p>
+<p>This is often more useful than the central result. If the current
+mortgage rate is 3.0% and the break-even is 3.1%, your conclusion is
+fragile. If the break-even is 5.5%, the result is less sensitive to
+modest rate estimation error.</p>
+<p>A decision boundary tells you <strong>what would have to change for
+the conclusion to reverse</strong>.</p>
+<h2 id="attribution">53. Attribution</h2>
+<p><strong>Lab → Attribution</strong> explains the terminal Net Worth
+difference between the active child scenario and baseline.</p>
+<p>The tool performs a Shapley-style decomposition of scenario patch
+groups.</p>
+<p>It shows:</p>
+<ul>
+<li>baseline outcome;</li>
+<li>active-scenario outcome;</li>
+<li>total delta;</li>
+<li>method;</li>
+<li>number of groups;</li>
+<li>residual;</li>
+<li>contribution of each patch group.</li>
+</ul>
+<p>For a small enough number of groups the method is <strong>Exact
+Shapley</strong>; beyond the implemented threshold it becomes
+<strong>Permutation-sampled</strong>.</p>
+<p>The contributions plus residual reconcile to the total scenario delta
+within the engine’s tolerance.</p>
+<p>Use Attribution to answer questions like:</p>
+<ul>
+<li>Was most of the improvement caused by lower housing cost or higher
+savings?</li>
+<li>Did the scenario work because of the intended decision, or because
+an unrelated assumption changed?</li>
+<li>Which scenario changes are actually material?</li>
+</ul>
+<p>Attribution explains the model delta; it does not prove causality in
+the real world.</p>
+<h2 id="ledger">54. Ledger</h2>
+<h3 id="why-the-ledger-exists">54.1 Why the ledger exists</h3>
+<p>Financial models become misleading when every cash movement is
+treated as an expense or when assets and liabilities are updated
+inconsistently.</p>
+<p>Financial Decision Studio therefore journals financial movements and
+checks balance-sheet reconciliation.</p>
+<p>The Ledger screen reports:</p>
+<ul>
+<li>Assets;</li>
+<li>Liabilities;</li>
+<li>Net Worth;</li>
+<li>number of journal entries;</li>
+<li>reconciliation status.</li>
+</ul>
+<h3 id="double-entry-logic">54.2 Double-entry logic</h3>
+<p>Each journal entry contains balanced debit and credit postings. The
+objective is not to teach bookkeeping—it is to preserve economic
+identities.</p>
+<p>The core balance-sheet identity is:</p>
+<p><strong>Assets − Liabilities = Net Worth</strong>.</p>
+<h3 id="fundamental-examples">54.3 Fundamental examples</h3>
+<p><strong>Investment contribution</strong><br />
+Cash decreases; investments increase. No wealth is created simply by
+moving the money.</p>
+<p><strong>Mortgage principal repayment</strong><br />
+Cash decreases; mortgage liability decreases. Principal is not a
+consumed expense.</p>
+<p><strong>Mortgage interest</strong><br />
+Cash decreases; interest is a consumed expense.</p>
+<p><strong>Property purchase</strong><br />
+Cash/down payment and financing are exchanged for a property asset;
+acquisition costs are separate consumed costs.</p>
+<p><strong>Investment gain</strong><br />
+The investment asset value changes. It is a valuation change, not a cash
+contribution.</p>
+<p><strong>Security deposit</strong><br />
+Cash may decrease when paid, but a recoverable deposit asset is created.
+Loss becomes expense only when the deposit is actually lost.</p>
+<p>This is why “cash outflow” and “expense” are not interchangeable
+concepts.</p>
+<h3 id="journal-explorer">54.4 Journal explorer</h3>
+<p>The on-screen <strong>Journal explorer</strong> displays the latest
+250 entries. <strong>Export CSV</strong> exports the complete audit
+trail.</p>
+<p>The CSV exporter neutralizes common spreadsheet formula prefixes in
+user-controlled text to reduce formula-injection risk when the file is
+opened in spreadsheet software.</p>
+<h2 id="data">55. Data</h2>
+<p><strong>Lab → Data</strong> is the advanced configuration center.</p>
+<p>It includes:</p>
+<ul>
+<li><strong>Assumptions &amp; tax pack</strong>;</li>
+<li><strong>Expert plan JSON</strong>;</li>
+<li>Household members;</li>
+<li>Financial policies;</li>
+<li>Other liabilities;</li>
+<li>Additional properties;</li>
+<li>Life events;</li>
+<li>Insurance &amp; protection;</li>
+<li>Plan health.</li>
+</ul>
+<p>This is where advanced users can inspect model structure without
+forcing all fields into the normal Plan interface.</p>
+<h3 id="plan-health">Plan health</h3>
+<p>Validation issues are classified as:</p>
+<ul>
+<li><strong>blocking</strong> — the plan cannot be simulated
+safely;</li>
+<li><strong>warning</strong> — the plan can run, but an assumption or
+limitation deserves attention;</li>
+<li><strong>informational</strong> — useful model information.</li>
+</ul>
+<p>Do not treat a green headline result as trustworthy if the plan
+contains unresolved validation concerns that materially affect
+interpretation.</p>
+<h2 id="audit">56. Audit</h2>
+<p><strong>Lab → Audit</strong> provides embedded diagnostics and
+runtime/reproducibility information.</p>
+<h3 id="embedded-diagnostics">Embedded diagnostics</h3>
+<p>The application runs fast production-core invariants and reports
+pass/fail status. These checks cover important mathematical and
+accounting behaviors, but they are not a proof that every possible plan
+is correct.</p>
+<h3 id="reproducibility-capabilities">Reproducibility &amp;
+capabilities</h3>
+<p>The Audit screen includes items such as:</p>
+<ul>
+<li>build ID;</li>
+<li>engine version;</li>
+<li>schema version;</li>
+<li>app version;</li>
+<li>plan fingerprint;</li>
+<li>storage mode;</li>
+<li>IndexedDB detection;</li>
+<li>localStorage availability;</li>
+<li>Web Worker availability;</li>
+<li>Web Crypto availability;</li>
+<li>File API availability;</li>
+<li>Share capability;</li>
+<li>Risk seed and path count;</li>
+<li>network dependency status.</li>
+</ul>
+<p>The <strong>Plan fingerprint</strong> helps identify a specific plan
+configuration for reproducibility. Where Web Crypto is available, the
+application can use SHA-256; a deterministic non-cryptographic fallback
+may be used when cryptographic hashing is unavailable.</p>
+<hr />
+<h1 id="part-ix-actual-vs-plan">Part IX — Actual vs Plan</h1>
+<h2 id="why-use-actual-vs-plan">57. Why use Actual vs plan</h2>
+<p>A financial plan becomes less useful if it is never compared with
+reality.</p>
+<p><strong>Actual vs plan</strong> lets you record what actually
+happened and compare it with the forecast for the same calendar
+month.</p>
+<p>This turns the model from a one-time projection into a living
+planning process.</p>
+<h2 id="actual-snapshot">58. Actual Snapshot</h2>
+<p>Use <strong>Record snapshot</strong> to capture an observed
+checkpoint.</p>
+<p>A component-level snapshot can include:</p>
+<ul>
+<li>month;</li>
+<li>cash;</li>
+<li>investments;</li>
+<li>property;</li>
+<li>debt;</li>
+<li>Net Worth.</li>
+</ul>
+<p>The interface then shows:</p>
+<ul>
+<li><strong>Latest actual</strong>;</li>
+<li><strong>Projected at that month</strong>;</li>
+<li><strong>Variance</strong>;</li>
+<li>observed composition.</li>
+</ul>
+<h3 id="interpreting-variance">Interpreting variance</h3>
+<p>Variance is approximately:</p>
+<p><strong>Actual Net Worth − Projected Net Worth</strong>.</p>
+<p>A positive variance means you are ahead of the old projection on that
+metric. A negative variance means you are behind.</p>
+<p>Do not immediately conclude that a positive variance means better
+financial behavior. It may be caused by asset prices, delayed spending,
+an omitted liability, or a one-time event. Investigate the
+composition.</p>
+<p>Similarly, a negative variance may be perfectly acceptable if it
+reflects a deliberate life decision that was not in the old plan.</p>
+<h2 id="rebase-plan">59. Rebase Plan</h2>
+<p><strong>Rebase future plan from this snapshot</strong> changes the
+projection opening state to an observed snapshot.</p>
+<p>Conceptually, the selected snapshot becomes the new starting point
+for the future model. Cash, investments, property, and debt are replaced
+by the observed values, while future timing references are shifted so
+their calendar intent is preserved where possible.</p>
+<p>The action is deliberately explicit and asks for confirmation.</p>
+<p>A component-level snapshot is required; a legacy snapshot containing
+only aggregate Net Worth is not sufficient for a proper rebase.</p>
+<h2 id="updating-the-future-does-not-mean-rewriting-the-past">60.
+Updating the future does not mean rewriting the past</h2>
+<p>A good rebase process has two responsibilities:</p>
+<ol type="1">
+<li>use reality as the new opening state for future planning;</li>
+<li>preserve the historical forecast so that you can still evaluate how
+the original plan performed.</li>
+</ol>
+<p>Financial Decision Studio stores forecast archives/checkpoints when
+rebasing. This protects the distinction between:</p>
+<ul>
+<li>“what we expected then”;</li>
+<li>“what actually happened”;</li>
+<li>“what we now expect going forward.”</li>
+</ul>
+<p>Do not delete historical meaning merely because the new forecast is
+more current.</p>
+<hr />
+<h1 id="part-x-saving-privacy-and-sharing">Part X — Saving, privacy, and
+sharing</h1>
+<h2 id="persistence-hierarchy">61. Persistence hierarchy</h2>
+<p>The application attempts persistence in this order:</p>
+<ol type="1">
+<li><strong>IndexedDB</strong>;</li>
+<li><strong>localStorage</strong> fallback;</li>
+<li><strong>memory / Session only</strong> fallback.</li>
+</ol>
+<p>The current status is shown in the interface with labels such as:</p>
+<ul>
+<li><strong>Saved · IndexedDB</strong>;</li>
+<li><strong>Saved · localStorage</strong>;</li>
+<li><strong>Unsaved</strong>;</li>
+<li><strong>Session only</strong>.</li>
+</ul>
+<p>If persistence falls back to memory, the application deliberately
+avoids pretending that the plan is durably saved.</p>
+<h2 id="why-file-requires-caution">62. Why <code>file://</code> requires
+caution</h2>
+<p>When an HTML application is opened directly from local storage,
+browser policies around storage, origins, privacy modes, cleanup, or
+device behavior can vary.</p>
+<p>A plan that persists on one browser/device may behave differently on
+another.</p>
+<p>Therefore browser storage should be treated as convenience
+persistence—not the only durable backup contract.</p>
+<blockquote>
+<p><strong>Recommended practice —</strong> Keep periodic copies of
+<strong>Plan JSON</strong> or <strong>Portable HTML</strong>, especially
+before major edits or browser/device changes.</p>
+</blockquote>
+<h2 id="checkpoint">63. Checkpoint</h2>
+<p>The <strong>Checkpoint</strong> button requests an explicit save of
+the current plan.</p>
+<p>If durable browser storage is unavailable, the application warns that
+the session is memory-only and recommends exporting a backup.</p>
+<p>A checkpoint is useful before a major scenario-editing session, but
+it does not replace an external backup file.</p>
+<h2 id="plan-json">64. Plan JSON</h2>
+<p><strong>Plan JSON</strong> exports the plan data in a structured
+format.</p>
+<p>Advantages:</p>
+<ul>
+<li>compact;</li>
+<li>easy to archive;</li>
+<li>suitable for re-import;</li>
+<li>useful for advanced inspection and versioned plan storage.</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li>it is data, not the application itself;</li>
+<li>it is normally human-readable, so anyone with the file can inspect
+its contents;</li>
+<li>it should not be treated as encrypted unless specifically protected
+outside the app.</li>
+</ul>
+<p>Plan imports are migrated and validated before activation.
+Unsupported future schemas and unsafe prototype-related keys are
+rejected rather than silently accepted.</p>
+<h2 id="portable-html">65. Portable HTML</h2>
+<p>A <strong>Portable HTML</strong> combines the application shell and
+the plan payload into a self-contained shareable HTML file.</p>
+<p>This is often the most convenient durable backup because the
+recipient can open the file and reproduce the deterministic plan without
+installing Financial Decision Studio separately.</p>
+<p>A portable copy can include relevant plan, scenario, and
+reproducibility metadata.</p>
+<p>Treat it as sensitive if the embedded plan contains personal
+financial information.</p>
+<h2 id="encrypted-portable-html">66. Encrypted Portable HTML</h2>
+<p><strong>Encrypted Portable HTML</strong> protects the embedded plan
+payload with password-based authenticated encryption when Web Crypto is
+available.</p>
+<p>The implementation uses modern browser cryptography, including:</p>
+<ul>
+<li>PBKDF2-HMAC-SHA-256 for password-based key derivation;</li>
+<li>a high iteration count;</li>
+<li>random salt;</li>
+<li>AES-256-GCM authenticated encryption;</li>
+<li>random IV/nonce.</li>
+</ul>
+<h3 id="what-happens-when-you-open-it">What happens when you open
+it</h3>
+<p>The application detects the encrypted embedded payload and asks for
+the password. With the correct password, the plan is decrypted in the
+browser and loaded into memory.</p>
+<h3 id="if-the-password-is-wrong">If the password is wrong</h3>
+<p>Authenticated decryption fails and the plan is not loaded as valid
+plaintext.</p>
+<h3 id="if-you-lose-the-password">If you lose the password</h3>
+<p>There is no “forgot password” server because the product is
+local-first and does not store a recovery copy of your encryption
+key.</p>
+<blockquote>
+<p><strong>Critical —</strong> If you lose the password to an encrypted
+portable file and do not have another backup, the plan may be
+unrecoverable. Keep the password in a secure password manager and
+maintain an independent backup policy.</p>
+</blockquote>
+<h2 id="share-and-web-share">67. Share and Web Share</h2>
+<p><strong>Share</strong> uses browser/device sharing capabilities where
+available. If file sharing is not supported, the product falls back to a
+download/export workflow.</p>
+<p>Whether the operating system shows a native share sheet depends on
+browser capabilities.</p>
+<p>Before sharing, choose intentionally between:</p>
+<ul>
+<li>plain plan data;</li>
+<li>plain Portable HTML;</li>
+<li>encrypted Portable HTML.</li>
+</ul>
+<p>Do not send a plain portable file through an untrusted channel merely
+because the app itself runs locally.</p>
+<h2 id="privacy-mode">68. Privacy mode</h2>
+<p>When the application is operating in privacy/memory-only mode, the
+plan remains in the current session and is not presented as durably
+persisted.</p>
+<p>This can be useful on a temporary or restricted environment, but
+closing the tab or browser may discard the session.</p>
+<p>Export before leaving.</p>
+<h2 id="recovery-mode">69. Recovery mode</h2>
+<p>The application includes a top-level recovery boundary to avoid
+turning a runtime/storage/migration problem into a blank white
+screen.</p>
+<p>The recovery interface can offer actions such as:</p>
+<ul>
+<li><strong>Export recoverable plan</strong>;</li>
+<li><strong>Open safe example</strong>;</li>
+<li><strong>Clear local storage &amp; reload</strong>.</li>
+</ul>
+<p>If recovery mode appears:</p>
+<ol type="1">
+<li>export recoverable data first if possible;</li>
+<li>do not immediately clear storage unless you have a backup;</li>
+<li>open the safe example only if you need to confirm that the
+application engine itself still works;</li>
+<li>re-import a known-good Plan JSON or Portable HTML afterward.</li>
+</ol>
+<hr />
+<h1
+id="part-xi-how-to-make-decisions-with-financial-decision-studio">Part
+XI — How to make decisions with Financial Decision Studio</h1>
+<h2 id="a-practical-10-step-method">70. A practical 10-step method</h2>
+<h3 id="build-a-realistic-baseline">1. Build a realistic baseline</h3>
+<p>Start with the world as it is, not the world you hope to reach.</p>
+<p>Use current cash, investments, debt, housing, income, and recurring
+expenses. Avoid “solving” the baseline by entering optimistic returns or
+hypothetical future income before you have modeled the actual starting
+position.</p>
+<p>A baseline is useful only if it is a credible reference state.</p>
+<h3 id="check-liquidity-first">2. Check liquidity first</h3>
+<p>Before asking which option produces the highest terminal wealth,
+ask:</p>
+<ul>
+<li>Is <strong>Liquid Net Worth</strong> healthy?</li>
+<li>Is <strong>Liquidity Runway</strong> sufficient?</li>
+<li>Does the deterministic path encounter a funding failure?</li>
+<li>Does the plan rely on selling investments at an inconvenient time to
+meet mandatory obligations?</li>
+</ul>
+<p>A plan that is theoretically wealthy at year 30 but cannot fund year
+3 is not a viable plan.</p>
+<h3 id="define-the-goals">3. Define the goals</h3>
+<p>State what the plan is trying to achieve.</p>
+<p>Separate:</p>
+<ul>
+<li>non-negotiable minimums (<strong>Hard</strong>);</li>
+<li>normal objectives (<strong>Target</strong>);</li>
+<li>stretch ambitions (<strong>Aspirational</strong>).</li>
+</ul>
+<p>Make the target date and value basis explicit.</p>
+<h3 id="create-alternatives">4. Create alternatives</h3>
+<p>Use scenarios to represent actual choices—not arbitrary bundles of
+unrelated changes.</p>
+<p>For example:</p>
+<ul>
+<li>Buy vs Rent;</li>
+<li>60% LTV vs 80% LTV;</li>
+<li>retire in 2038 vs 2042;</li>
+<li>prepay €500/month vs invest €500/month.</li>
+</ul>
+<p>Keep common household resources constant unless the decision itself
+changes them.</p>
+<h3 id="compare-the-deterministic-result">5. Compare the deterministic
+result</h3>
+<p>Use the deterministic engine to understand the mechanics before
+introducing randomness.</p>
+<p>Compare:</p>
+<ul>
+<li>terminal Net Worth;</li>
+<li>Liquid Net Worth;</li>
+<li>goal status;</li>
+<li>minimum liquidity runway;</li>
+<li>debt path;</li>
+<li>timing of large costs or events.</li>
+</ul>
+<p>If the deterministic model itself does not make economic sense, Monte
+Carlo will not rescue it.</p>
+<h3 id="look-for-break-even-points">6. Look for break-even points</h3>
+<p>A decision is more useful when you know what would reverse it.</p>
+<p>Examples:</p>
+<ul>
+<li>mortgage-rate break-even;</li>
+<li>rent level at which Buy and Rent become equal;</li>
+<li>home price at which liquidity becomes unacceptable;</li>
+<li>additional monthly capacity required to fund a goal.</li>
+</ul>
+<p>Break-even analysis converts “A wins” into “A wins as long as X
+remains below/above Y.”</p>
+<h3 id="run-monte-carlo">7. Run Monte Carlo</h3>
+<p>Once the deterministic baseline is coherent, use <strong>Lab →
+Risk</strong>.</p>
+<p>Focus on:</p>
+<ul>
+<li>liquidity failure;</li>
+<li>goal success;</li>
+<li>lower percentiles;</li>
+<li>drawdowns;</li>
+<li>distribution width;</li>
+<li>fan-chart evolution.</li>
+</ul>
+<p>Do not focus only on the median.</p>
+<h3 id="test-robustness">8. Test robustness</h3>
+<p>For a Rent-vs-Buy decision, use <strong>Robustness</strong> to see
+whether the conclusion survives plausible assumption error.</p>
+<p>A large base-case advantage with a 52% win rate across nearby
+assumptions is fragile. A smaller base-case advantage that survives most
+tested assumptions may be more decision-relevant.</p>
+<h3 id="identify-decisive-assumptions">9. Identify decisive
+assumptions</h3>
+<p>Use <strong>Sensitivity</strong> and <strong>Attribution</strong> to
+understand what drives the result.</p>
+<p>Ask:</p>
+<ul>
+<li>Which input has the strongest influence?</li>
+<li>Is that input knowable with reasonable confidence?</li>
+<li>Is the result driven by the intended decision or by an accidental
+side change?</li>
+</ul>
+<p>If the conclusion depends almost entirely on one speculative
+assumption, treat the decision as uncertain even if the central number
+looks precise.</p>
+<h3 id="choose-using-financial-and-personal-constraints">10. Choose
+using financial and personal constraints</h3>
+<p>Financial optimization does not capture every reason people make
+decisions.</p>
+<p>A home may provide stability or reduce flexibility. Paying off debt
+may provide psychological value. Holding more cash may be rational for a
+household with uncertain income even when expected terminal wealth
+falls.</p>
+<blockquote>
+<p><strong>Core principle —</strong> The option with the highest
+terminal Net Worth is not automatically the best decision.</p>
+</blockquote>
+<p>A sound choice combines model evidence with liquidity needs, risk
+tolerance, flexibility, personal preferences, and constraints the model
+does not fully represent.</p>
+<hr />
+<h1 id="part-xii-practical-examples">Part XII — Practical examples</h1>
+<h2 id="case-1-rent-vs-buy">71. Case 1 — Rent vs Buy</h2>
+<p><strong>Question:</strong> Should a household keep renting or buy a
+€280,000 home?</p>
+<p>Example assumptions:</p>
+<ul>
+<li>rent: €950/month;</li>
+<li>home price: €280,000;</li>
+<li>mortgage rate: 3.2%;</li>
+<li>LTV: 80%;</li>
+<li>home appreciation: 2%;</li>
+<li>investment return: 6%;</li>
+<li>purchase/sale/ownership costs entered realistically.</li>
+</ul>
+<h3 id="procedure">Procedure</h3>
+<ol type="1">
+<li>Start with <strong>Quick Decision</strong> or open <strong>Decisions
+→ Rent vs Buy</strong>.</li>
+<li>Enter the controlled inputs.</li>
+<li>Compare <strong>Rent + invest</strong> and <strong>Buy with
+mortgage</strong>.</li>
+<li>Check the monthly mortgage payment. A terminal advantage is not
+useful if the monthly cash-flow burden is unacceptable.</li>
+<li>Open <strong>Sensitivity</strong>.</li>
+<li>Inspect the mortgage-rate × rent heatmap and the mortgage-rate
+break-even.</li>
+<li>Run <strong>Robustness</strong> and inspect Buy win rate and the
+critical assumptions.</li>
+<li>Use <strong>Create Rent / Buy scenarios</strong>.</li>
+<li>In the full scenarios, compare <strong>Liquid Net Worth</strong>,
+goal status, and minimum runway.</li>
+<li>Run Monte Carlo on the serious candidates.</li>
+</ol>
+<p><strong>Reasoning:</strong></p>
+<p>Suppose the deterministic focused model shows Buy ahead by €55,000
+after 30 years. That alone is not enough.</p>
+<p>If the full Buy scenario leaves only 3 months of liquidity after
+closing costs and the Rent scenario maintains 12 months, the liquidity
+difference is material.</p>
+<p>If the sensitivity boundary shows Buy loses when the mortgage rate
+rises from 3.2% to 3.5%, the central result is fragile.</p>
+<p>If Buy still wins across a broad range and does not compromise the
+reserve, the financial case is stronger.</p>
+<h2 id="case-2-prepay-the-mortgage-vs-invest">72. Case 2 — Prepay the
+mortgage vs invest</h2>
+<p><strong>Question:</strong> A homeowner has €500/month available above
+the protected reserve. Should it go toward mortgage principal or
+investments?</p>
+<h3 id="procedure-1">Procedure</h3>
+<ol type="1">
+<li>Make sure the active plan uses <strong>Own / buy</strong> and the
+mortgage details are current.</li>
+<li>Open <strong>Decisions → Prepay vs Invest</strong>.</li>
+<li>Set or verify the extra-principal amount.</li>
+<li>Compare:
+<ul>
+<li>scheduled mortgage only;</li>
+<li>extra principal;</li>
+<li>invest same cash allocation.</li>
+</ul></li>
+<li>Check that the reserve remains protected.</li>
+<li>Compare debt-free timing and terminal wealth.</li>
+<li>Create explicit scenarios if you want deeper analysis.</li>
+<li>Run <strong>Risk</strong> on the investment branch because its
+future return is uncertain.</li>
+</ol>
+<p><strong>Reasoning:</strong></p>
+<p>If the mortgage costs 2% and the investment portfolio is assumed to
+earn 7%, the deterministic investment branch may look superior. But that
+is not a guaranteed 5% spread.</p>
+<p>Mortgage prepayment produces a much more certain reduction in
+financing cost. Investment returns are stochastic and may be poor
+exactly when liquidity matters.</p>
+<p>The right interpretation is not “7% is greater than 2%, therefore
+invest.” It is “what additional expected wealth am I being compensated
+with for taking market, sequence, tax, and liquidity risk?”</p>
+<h2 id="case-3-is-a-home-truly-affordable">73. Case 3 — Is a home truly
+affordable?</h2>
+<p><strong>Question:</strong> The bank may approve a €400,000 purchase.
+Is it financially sustainable for the household?</p>
+<h3 id="procedure-2">Procedure</h3>
+<ol type="1">
+<li>Build a realistic household baseline.</li>
+<li>Include purchase costs, maintenance, insurance, taxes/assumptions,
+and the mortgage—not just the monthly payment.</li>
+<li>Set a sensible minimum reserve.</li>
+<li>Open <strong>Optimize → Affordable home price</strong>.</li>
+<li>Treat the result as a model ceiling, not a spending target.</li>
+<li>Create a scenario below that ceiling.</li>
+<li>Inspect <strong>Liquidity Runway</strong> through time, especially
+immediately after purchase.</li>
+<li>Run Monte Carlo.</li>
+<li>Use a more conservative home-appreciation or income assumption to
+see whether the plan remains feasible.</li>
+</ol>
+<p><strong>Reasoning:</strong></p>
+<p>A household can qualify for a mortgage and still have an unsafe plan.
+The key difference is that “bank affordability” focuses on credit
+underwriting, while household sustainability also includes reserves,
+goals, other debt, investment opportunity cost, and future
+uncertainty.</p>
+<p>If the model says €400,000 is technically feasible but a €340,000
+home preserves 12 months of liquidity and materially increases goal
+success, the lower price may be a better decision even though it is not
+the maximum possible purchase.</p>
+<h2 id="case-4-probability-of-reaching-a-wealth-target">74. Case 4 —
+Probability of reaching a wealth target</h2>
+<p><strong>Question:</strong> What is the probability of reaching a
+€1,000,000 wealth goal in 25 years?</p>
+<h3 id="procedure-3">Procedure</h3>
+<ol type="1">
+<li>Create the goal with the correct target month and value basis.</li>
+<li>Check the deterministic funding ratio in
+<strong>Goals</strong>.</li>
+<li>Confirm that expected returns and inflation are not overly
+optimistic.</li>
+<li>Open <strong>Lab → Risk</strong>.</li>
+<li>Start with around 2,000 paths.</li>
+<li>Run the simulation.</li>
+<li>Read <strong>Goal success</strong> and its 95% confidence
+interval.</li>
+<li>Inspect <strong>Liquidity failure</strong> separately.</li>
+<li>Inspect P10/P90 and the fan chart.</li>
+<li>If success is too low, create a scenario with a realistic
+change—higher external savings, lower goal, longer horizon, or different
+spending—and rerun.</li>
+</ol>
+<p><strong>Reasoning:</strong></p>
+<p>Suppose the deterministic plan reaches €1.08 million but Monte Carlo
+goal success is only 63%. The correct conclusion is not “the model says
+I will reach €1.08 million.” It is that the central path meets the goal
+but the target is exposed to stochastic uncertainty under the current
+assumptions.</p>
+<p>A higher monthly saving rate that raises goal success to 85% while
+keeping liquidity healthy may be a more robust plan.</p>
+<h2 id="case-5-update-the-plan-after-one-year">75. Case 5 — Update the
+plan after one year</h2>
+<p><strong>Question:</strong> A year has passed. Cash, investments, and
+debt differ from the original forecast. How should the plan be
+updated?</p>
+<h3 id="procedure-4">Procedure</h3>
+<ol type="1">
+<li>Open <strong>Plan → Detailed → Actual vs plan</strong>.</li>
+<li>Use <strong>Record snapshot</strong> for the current month.</li>
+<li>Enter observed cash, investments, property, and debt carefully.</li>
+<li>Compare <strong>Latest actual</strong> with <strong>Projected at
+that month</strong>.</li>
+<li>Review the variance and composition.</li>
+<li>Decide whether the difference is temporary or represents a new
+reality.</li>
+<li>If the new state should become the planning starting point, use
+<strong>Rebase future plan from this snapshot</strong>.</li>
+<li>Confirm the action.</li>
+<li>Review the new baseline and future timing.</li>
+<li>Keep the archived forecast so you can still compare original
+expectations with reality.</li>
+</ol>
+<p><strong>Reasoning:</strong></p>
+<p>Suppose the original plan projected €80,000 Net Worth after one year,
+but actual Net Worth is €74,000 because markets fell while savings
+behavior was on target.</p>
+<p>Rebasing does not mean the original plan was “wrong” in a useless
+sense. It means the current opening state is €74,000 rather than
+€80,000. The archived forecast remains valuable evidence about the
+difference between expectation and realized path.</p>
+<hr />
+<h1 id="part-xiii-common-mistakes">Part XIII — Common mistakes</h1>
+<h2 id="using-overly-optimistic-returns">76. Using overly optimistic
+returns</h2>
+<p>A 10% expected return makes almost every long-horizon plan look
+better.</p>
+<p>That does not make the plan realistic.</p>
+<p>Use assumptions you can defend, test lower-return cases, and use
+Monte Carlo instead of treating the expected-return path as destiny.</p>
+<h2 id="confusing-net-worth-with-liquid-net-worth">77. Confusing Net
+Worth with Liquid Net Worth</h2>
+<p>A €500,000 home with a large mortgage can create substantial gross
+assets while leaving little accessible wealth.</p>
+<p>Always ask both:</p>
+<ul>
+<li>“How wealthy is the balance sheet?”</li>
+<li>“How much financial capacity is actually liquid after taxes and
+debt?”</li>
+</ul>
+<h2 id="ignoring-liquidity-runway">78. Ignoring Liquidity Runway</h2>
+<p>Liquidity is a timing problem. A household can be solvent in the long
+run and still fail to fund a near-term obligation.</p>
+<p>Do not optimize terminal wealth while accepting an unrealistic
+short-term liquidity path.</p>
+<h2 id="treating-monte-carlo-as-a-prediction">79. Treating Monte Carlo
+as a prediction</h2>
+<p>Monte Carlo does not discover the future probability distribution of
+markets. It explores the consequences of the distributional assumptions
+you gave the model.</p>
+<p>If expected returns, volatility, correlations, inflation, taxes, or
+property assumptions are wrong, the output distribution can also be
+wrong.</p>
+<h2 id="comparing-scenarios-with-different-starting-resources">80.
+Comparing scenarios with different starting resources</h2>
+<p>If one scenario starts with more money, a higher salary, or a
+different initial investment balance for no decision-related reason, the
+comparison is contaminated.</p>
+<p>Use the same baseline and change only what the alternative actually
+changes.</p>
+<h2 id="forgetting-real-estate-costs">81. Forgetting real-estate
+costs</h2>
+<p>Do not compare rent only with the mortgage payment.</p>
+<p>Consider, where relevant:</p>
+<ul>
+<li>purchase costs;</li>
+<li>maintenance;</li>
+<li>property taxes;</li>
+<li>insurance;</li>
+<li>sale costs;</li>
+<li>financing costs;</li>
+<li>disposal tax assumptions;</li>
+<li>opportunity cost of equity/down payment;</li>
+<li>security-deposit treatment for renting.</li>
+</ul>
+<h2 id="treating-the-tax-pack-like-an-official-tax-return">82. Treating
+the tax pack like an official tax return</h2>
+<p>The tax packs are planning approximations.</p>
+<p>The Italy 2026 pack intentionally omits or simplifies several tax
+components. Never use its result as the sole basis for a tax filing or a
+legal tax position.</p>
+<h2 id="ignoring-inflation">83. Ignoring inflation</h2>
+<p>A future €1,000,000 is not automatically equivalent to €1,000,000 of
+purchasing power today.</p>
+<p>Check whether a goal is nominal at target or expressed in current
+purchasing power.</p>
+<p>Also remember that not every income or expense necessarily grows
+exactly with general inflation.</p>
+<h2 id="looking-only-at-the-terminal-result">84. Looking only at the
+terminal result</h2>
+<p>Two plans can end with the same wealth and have very different
+experiences:</p>
+<ul>
+<li>one may suffer severe drawdowns;</li>
+<li>one may nearly exhaust liquidity;</li>
+<li>one may remain heavily leveraged for decades;</li>
+<li>one may require much higher monthly sacrifice.</li>
+</ul>
+<p>Review the path, not just the endpoint.</p>
+<h2 id="changing-too-many-variables-at-once">85. Changing too many
+variables at once</h2>
+<p>If a scenario changes return, salary, spending, housing, and goal
+simultaneously, you cannot easily identify the driver.</p>
+<p>Change one decision at a time when possible, then use
+<strong>Attribution</strong> and <strong>Sensitivity</strong>.</p>
+<h2 id="using-additional-net-cash-flow-to-make-the-plan-work">86. Using
+Additional net cash flow to make the plan “work”</h2>
+<p><strong>Additional net cash flow</strong> is external wealth entering
+the household. It is not free money and not merely a bookkeeping
+transfer.</p>
+<p>Use it only when you are deliberately asking “what if the household
+earns or receives this extra net cash?”</p>
+<p>For reallocating existing resources, use the appropriate investment,
+mortgage, or policy controls.</p>
+<h2 id="ignoring-warnings-and-blocking-issues">87. Ignoring warnings and
+blocking issues</h2>
+<p>A blocking validation issue exists because the engine cannot safely
+interpret the plan as configured.</p>
+<p>Do not bypass validation by assuming the output is “probably close
+enough.”</p>
+<p>Warnings may indicate simplified tax behavior, horizon assumptions,
+unsupported model semantics, or another limitation that can materially
+affect interpretation.</p>
+<hr />
+<h1 id="part-xiv-real-model-limitations">Part XIV — Real model
+limitations</h1>
+<h2 id="tax-engine">88. Tax engine</h2>
+<p>The tax engine is a <strong>planning model</strong>, not tax-filing
+software.</p>
+<p>The Italy 2026 tax pack contains simplified national income-tax,
+generic financial-tax, securities-stamp, and mortgage-interest-credit
+assumptions. It does not represent every legal rule, deduction, local
+surtax, instrument classification, property-tax rule, or eligibility
+condition.</p>
+<p>Future-year law is not known. A hold-last assumption is a modeling
+convention, not a legal forecast.</p>
+<h2 id="account-types">89. Account types</h2>
+<p>The current simulated account semantics are intentionally constrained
+to supported types such as:</p>
+<ul>
+<li>cash;</li>
+<li>taxable investment.</li>
+</ul>
+<p>The application does not pretend that every account label has
+distinct tax or withdrawal semantics.</p>
+<p>Unsupported account structures are blocked rather than silently
+treated as equivalent.</p>
+<h2 id="multi-currency">90. Multi-currency</h2>
+<p>The model is effectively base-currency only. Accounts/assets in a
+different currency are not silently converted using invented FX
+assumptions.</p>
+<p>If you need true multi-currency planning, this version does not
+provide a full FX engine.</p>
+<h2 id="tax-lots">91. Tax lots</h2>
+<p>Positions retain separate cost basis, which is materially better than
+collapsing all holdings into one number.</p>
+<p>However, the product is not a full transaction-level tax-lot engine.
+It does not implement every jurisdiction-specific lot-selection method,
+wash-sale rule, carried loss, wrapper, or withdrawal-order regime.</p>
+<h2 id="monte-carlo">92. Monte Carlo</h2>
+<p>The implemented stochastic mode is <strong>parametric Monte
+Carlo</strong>.</p>
+<p>The product does not present the following as implemented:</p>
+<ul>
+<li>historical sequence simulation;</li>
+<li>block bootstrap;</li>
+<li>regime-switching simulation;</li>
+<li>historical resampling as a separate risk mode.</li>
+</ul>
+<p>Parametric Monte Carlo is useful for controlled risk analysis but
+remains assumption-dependent.</p>
+<h2 id="optimization">93. Optimization</h2>
+<p>Optimize uses bounded deterministic searches/root solves/grid
+search.</p>
+<p>It is not a stochastic optimizer, Pareto engine, global evolutionary
+optimizer, or formal Value-of-Information system.</p>
+<p>A candidate found by Optimize should be validated separately under
+Risk and sensitivity analysis.</p>
+<h2 id="retirement-1">94. Retirement</h2>
+<p>Retirement is represented through scenario mechanics such as income
+ending and pension income beginning.</p>
+<p>This version does not implement a full actuarial system for:</p>
+<ul>
+<li>longevity distributions;</li>
+<li>survivor benefits;</li>
+<li>long-term care;</li>
+<li>annuity pricing;</li>
+<li>detailed pension-wrapper taxation;</li>
+<li>dynamic spending rules across mortality states.</li>
+</ul>
+<h2 id="insurance">95. Insurance</h2>
+<p>Insurance can be represented through premiums and configured
+benefits, but the model does not assess policy adequacy, exclusions,
+underwriting, claims probabilities, or optimal coverage design.</p>
+<h2 id="real-estate">96. Real estate</h2>
+<p>Property modeling includes meaningful cash-flow, financing,
+appreciation, transaction-cost, debt-linkage, and sale-tax
+assumptions.</p>
+<p>It does not automatically know every jurisdiction-specific legal,
+tax, condominium, maintenance, transaction, vacancy, tenant, or
+financing rule.</p>
+<p>Rental/property inputs remain assumptions you must validate.</p>
+<h2 id="rent-vs-buy-robustness-and-sensitivity">97. Rent vs Buy
+Robustness and Sensitivity</h2>
+<p>These tools are deliberately focused on the controlled Rent-vs-Buy
+model. They are not generic full-household robust-optimization or
+universal sensitivity engines for every plan parameter.</p>
+<h2 id="attribution-1">98. Attribution</h2>
+<p>Attribution decomposes scenario patch effects in the model.</p>
+<p>Exact Shapley is used only within the implemented group threshold;
+larger problems use permutation sampling.</p>
+<p>Counterfactual contribution analysis is explanatory, not proof of
+real-world causation.</p>
+<h2 id="market-data-and-legislation">99. Market data and
+legislation</h2>
+<p>Financial Decision Studio does not automatically fetch live market
+prices, forecasts, tax laws, mortgage offers, inflation releases, or
+regulatory updates.</p>
+<p>Your assumptions may become stale. Update them deliberately when the
+decision warrants it.</p>
+<h2 id="browser-and-storage">100. Browser and storage</h2>
+<p>Local browser behavior can differ by operating system, browser,
+privacy settings, and whether the application is opened via
+<code>file://</code>.</p>
+<p>IndexedDB or localStorage availability does not guarantee indefinite
+retention.</p>
+<p>Portable HTML and Plan JSON are the explicit durable backup
+mechanisms.</p>
+<h2 id="numerical-precision-vs-real-world-precision">101. Numerical
+precision vs real-world precision</h2>
+<p>The engine can perform calculations to high numerical precision. That
+does not mean the economic inputs deserve the same precision.</p>
+<p>A terminal result displayed to the euro may depend on assumptions
+that are uncertain by tens of thousands of euros.</p>
+<p>Use numerical precision for consistency, not as a substitute for
+humility about forecasts.</p>
+<hr />
+<h1 id="glossary">Glossary</h1>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Accessible Wealth</strong></td>
+<td>Cash plus after-tax accessible value of liquid investments.</td>
+</tr>
+<tr class="even">
+<td><strong>Actual Snapshot</strong></td>
+<td>Observed financial state recorded at a real calendar month.</td>
+</tr>
+<tr class="odd">
+<td><strong>Actual vs plan</strong></td>
+<td>Comparison between observed outcomes and the earlier
+projection.</td>
+</tr>
+<tr class="even">
+<td><strong>Aspirational goal</strong></td>
+<td>Stretch objective that does not define required-plan failure.</td>
+</tr>
+<tr class="odd">
+<td><strong>Asset</strong></td>
+<td>Investment type with return, volatility, fee, and class
+assumptions.</td>
+</tr>
+<tr class="even">
+<td><strong>Attribution</strong></td>
+<td>Decomposition of a scenario’s modeled difference into contributing
+patch groups.</td>
+</tr>
+<tr class="odd">
+<td><strong>Baseline</strong></td>
+<td>Reference scenario from which alternatives are compared.</td>
+</tr>
+<tr class="even">
+<td><strong>Branch</strong></td>
+<td>Scenario inheriting from another scenario while storing selected
+differences.</td>
+</tr>
+<tr class="odd">
+<td><strong>Break-even</strong></td>
+<td>Input value where the compared decision difference crosses
+zero.</td>
+</tr>
+<tr class="even">
+<td><strong>Common Random Numbers (CRN)</strong></td>
+<td>Technique that gives compared scenarios the same exogenous random
+shocks for fairer comparison.</td>
+</tr>
+<tr class="odd">
+<td><strong>Correlation</strong></td>
+<td>Statistical relationship assumed between stochastic drivers.</td>
+</tr>
+<tr class="even">
+<td><strong>Cost basis</strong></td>
+<td>Tax basis used to estimate gain on a taxable sale.</td>
+</tr>
+<tr class="odd">
+<td><strong>Deterministic simulation</strong></td>
+<td>Projection using the entered expected assumptions without random
+shocks.</td>
+</tr>
+<tr class="even">
+<td><strong>Drawdown</strong></td>
+<td>Decline from a prior wealth peak.</td>
+</tr>
+<tr class="odd">
+<td><strong>Expense</strong></td>
+<td>Consumed cost that reduces wealth.</td>
+</tr>
+<tr class="even">
+<td><strong>Fan chart</strong></td>
+<td>Time-series display of stochastic percentile bands.</td>
+</tr>
+<tr class="odd">
+<td><strong>Funding waterfall</strong></td>
+<td>Ordered process used to fund obligations from eligible
+resources.</td>
+</tr>
+<tr class="even">
+<td><strong>Goal success</strong></td>
+<td>Fraction of Monte Carlo paths satisfying required goal
+semantics.</td>
+</tr>
+<tr class="odd">
+<td><strong>Hard goal</strong></td>
+<td>Non-negotiable goal requirement.</td>
+</tr>
+<tr class="even">
+<td><strong>Holding / Position</strong></td>
+<td>Specific investment holding with account, asset, value, basis, and
+target weight.</td>
+</tr>
+<tr class="odd">
+<td><strong>LTV</strong></td>
+<td>Loan-to-value: mortgage amount relative to property value for a
+financed purchase.</td>
+</tr>
+<tr class="even">
+<td><strong>Liquidity failure</strong></td>
+<td>A simulated path cannot fund a mandatory obligation under the model
+rules.</td>
+</tr>
+<tr class="odd">
+<td><strong>Liquidity Runway</strong></td>
+<td>Accessible wealth expressed in months of essential outflow.</td>
+</tr>
+<tr class="even">
+<td><strong>Liquid Net Worth</strong></td>
+<td>Accessible wealth less remaining liabilities.</td>
+</tr>
+<tr class="odd">
+<td><strong>Monte Carlo</strong></td>
+<td>Repeated stochastic simulation under specified probability
+assumptions.</td>
+</tr>
+<tr class="even">
+<td><strong>Net Worth</strong></td>
+<td>Assets minus liabilities.</td>
+</tr>
+<tr class="odd">
+<td><strong>Nominal</strong></td>
+<td>Expressed in future currency units without converting back to
+today’s purchasing power.</td>
+</tr>
+<tr class="even">
+<td><strong>Percentile</strong></td>
+<td>Position within a simulated outcome distribution.</td>
+</tr>
+<tr class="odd">
+<td><strong>Plan fingerprint</strong></td>
+<td>Identifier derived from plan configuration for reproducibility.</td>
+</tr>
+<tr class="even">
+<td><strong>Policy</strong></td>
+<td>Financial rule such as reserve protection, surplus investing, or
+rebalancing.</td>
+</tr>
+<tr class="odd">
+<td><strong>Portable HTML</strong></td>
+<td>Self-contained copy of the application carrying an embedded
+plan.</td>
+</tr>
+<tr class="even">
+<td><strong>Rebase</strong></td>
+<td>Start future planning from an observed Actual Snapshot while
+retaining historical forecast context.</td>
+</tr>
+<tr class="odd">
+<td><strong>Rebalancing</strong></td>
+<td>Adjusting portfolio holdings toward target allocation.</td>
+</tr>
+<tr class="even">
+<td><strong>Reserve</strong></td>
+<td>Protected liquidity buffer.</td>
+</tr>
+<tr class="odd">
+<td><strong>Robustness</strong></td>
+<td>Analysis of whether a decision survives changes in uncertain
+assumptions.</td>
+</tr>
+<tr class="even">
+<td><strong>Scenario</strong></td>
+<td>Alternative branch of the financial plan.</td>
+</tr>
+<tr class="odd">
+<td><strong>Seed</strong></td>
+<td>Value controlling reproducible pseudo-random simulation.</td>
+</tr>
+<tr class="even">
+<td><strong>Sensitivity</strong></td>
+<td>Analysis of how the result changes as selected inputs vary.</td>
+</tr>
+<tr class="odd">
+<td><strong>Target goal</strong></td>
+<td>Normal planning objective, potentially with a lower acceptable
+minimum.</td>
+</tr>
+<tr class="even">
+<td><strong>Terminal liquidation</strong></td>
+<td>Valuing the final state after modeled taxes/costs of liquidating
+assets rather than simply keeping them.</td>
+</tr>
+<tr class="odd">
+<td><strong>Transfer</strong></td>
+<td>Balance-sheet movement that is not, by itself, a consumed
+expense.</td>
+</tr>
+<tr class="even">
+<td><strong>Wilson confidence interval</strong></td>
+<td>Statistical interval for a simulated binary proportion such as goal
+success.</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h1 id="faq">FAQ</h1>
+<h2 id="do-i-need-to-be-online">Do I need to be online?</h2>
+<p>No. The definitive application is designed to work offline in a
+single self-contained HTML file.</p>
+<h2 id="if-i-close-the-browser-will-i-lose-everything">If I close the
+browser, will I lose everything?</h2>
+<p>Not necessarily. The application tries IndexedDB and then
+localStorage. But local-file persistence is browser-dependent, and
+either storage mechanism can be unavailable, restricted, or cleared. If
+the status says <strong>Session only</strong>, assume the plan can
+disappear when the session ends.</p>
+<p>Maintain an external backup.</p>
+<h2 id="what-is-the-best-backup">What is the best backup?</h2>
+<p>For most users, keep both:</p>
+<ul>
+<li>a <strong>Portable HTML</strong> for convenient reopening;</li>
+<li>a <strong>Plan JSON</strong> for compact structured backup.</li>
+</ul>
+<p>For sensitive plans that must be shared or stored in less trusted
+locations, use <strong>Encrypted Portable HTML</strong> and protect the
+password separately.</p>
+<h2 id="can-i-use-italy-2026-to-prepare-my-tax-return">Can I use Italy
+2026 to prepare my tax return?</h2>
+<p>No. It is a planning approximation, not tax-filing software. Use
+official tax tools or a qualified professional for filing and legal tax
+positions.</p>
+<h2 id="why-is-my-net-worth-high-but-liquid-net-worth-low">Why is my Net
+Worth high but Liquid Net Worth low?</h2>
+<p>Because much of your wealth may be illiquid or offset by debt. A
+valuable mortgaged home can increase Net Worth while leaving limited
+accessible financial capacity.</p>
+<h2 id="why-is-an-investment-contribution-not-shown-as-an-expense">Why
+is an investment contribution not shown as an expense?</h2>
+<p>Because buying an investment moves value from cash to an investment
+asset. Wealth is not consumed simply because cash leaves the checking
+account.</p>
+<h2 id="why-is-mortgage-principal-not-an-expense">Why is mortgage
+principal not an expense?</h2>
+<p>Because principal repayment reduces cash and reduces the liability.
+Interest is the consumed financing expense; principal is a balance-sheet
+transfer.</p>
+<h2
+id="does-monte-carlo-tell-me-the-real-probability-that-markets-will-do-x">Does
+Monte Carlo tell me the real probability that markets will do X?</h2>
+<p>No. It tells you the frequency of outcomes generated by the model
+under its stochastic assumptions. Real-world probability may differ
+because the assumptions themselves are uncertain.</p>
+<h2 id="how-many-paths-should-i-use">How many paths should I use?</h2>
+<p>Use enough to stabilize the decision without making iteration
+unnecessarily slow. Around 500 is useful for quick exploration, around
+2,000 for normal analysis, and 5,000+ for deeper checks when your device
+handles it comfortably.</p>
+<p>If a decision changes because success moves from 71.2% to 71.8%, you
+are probably demanding more precision than the model supports.</p>
+<h2 id="why-doesnt-optimize-give-me-an-optimal-portfolio">Why doesn’t
+Optimize give me an “optimal portfolio”?</h2>
+<p>Because this release implements bounded financial solvers such as
+affordable-home price, LTV search, and required external monthly
+capacity. It does not claim to be a general portfolio optimizer.</p>
+<h2 id="can-i-model-a-pension-account-with-different-taxation">Can I
+model a pension account with different taxation?</h2>
+<p>Not as a fully distinct tax-wrapper/account type in this version.
+Retirement cash flows can be modeled, but account-specific pension tax
+and withdrawal-order semantics are not implemented as a complete
+subsystem.</p>
+<h2 id="can-i-use-multiple-currencies">Can I use multiple
+currencies?</h2>
+<p>Not with a true FX model. The product is base-currency oriented and
+blocks unsupported currency mismatches rather than silently converting
+them.</p>
+<h2 id="can-i-model-multiple-properties">Can I model multiple
+properties?</h2>
+<p>Yes. Use <strong>Lab → Data → Additional properties</strong>. Enter
+property-specific assumptions carefully, including sale and debt linkage
+where relevant.</p>
+<h2 id="can-i-model-an-event-with-several-actions">Can I model an event
+with several actions?</h2>
+<p>Yes, through advanced <strong>Life events</strong>. Multi-action
+events can represent combined inflow/outflow/investment/debt actions.
+Mandatory funding is handled with atomic/preflight logic where
+appropriate.</p>
+<h2 id="why-does-my-scenario-change-when-i-edit-the-baseline">Why does
+my scenario change when I edit the baseline?</h2>
+<p>Because scenarios are <strong>branches</strong>, not frozen copies. A
+child inherits fields from its parent unless the scenario explicitly
+overrides them.</p>
+<p>If you need a truly fixed historical comparison, export/archive the
+relevant plan state rather than assuming live scenario inheritance is
+immutable.</p>
+<h2 id="what-happens-if-a-mandatory-payment-cannot-be-funded">What
+happens if a mandatory payment cannot be funded?</h2>
+<p>The engine follows its funding waterfall through eligible cash and
+liquid resources. If the obligation cannot be funded, the path fails
+instead of silently creating an unconfigured loan or hiding an
+overdraft.</p>
+<h2 id="does-an-aspirational-goal-reduce-goal-success">Does an
+Aspirational goal reduce Goal success?</h2>
+<p>Aspirational goals do not define required-goal failure. Hard and
+Target semantics are what matter for required success.</p>
+<h2 id="can-i-see-forecast-archives-after-a-rebase">Can I see forecast
+archives after a Rebase?</h2>
+<p>The underlying plan preserves forecast archives so historical
+projection context is not rewritten. The normal Actual-vs-plan interface
+emphasizes current snapshots and variance; deeper archive structure can
+require Expert/Data inspection.</p>
+<h2 id="can-the-password-of-an-encrypted-portable-html-be-recovered">Can
+the password of an Encrypted Portable HTML be recovered?</h2>
+<p>There is no product recovery service or server-side copy. If you lose
+the password and have no other backup, the encrypted plan may be
+unrecoverable.</p>
+<h2
+id="why-does-risk-sometimes-show-a-survivor-only-median-as-well-as-the-main-median">Why
+does Risk sometimes show a survivor-only median as well as the main
+median?</h2>
+<p>When some stochastic paths fail, the unconditional distribution still
+accounts for those paths. A survivor-only statistic answers a separate
+question: “among paths that survived, what did terminal wealth look
+like?” Never substitute the survivor-only figure for the overall
+failure-aware result.</p>
+<h2 id="should-i-use-terminal-liquidation">Should I use terminal
+liquidation?</h2>
+<p>Use it when the decision question requires a final after-tax/disposal
+view—for example comparing strategies as if assets were liquidated at
+the horizon. Keep mode is more appropriate when you intend to value
+assets as still held. The same interpretation should be used
+consistently across scenarios.</p>
+<h2 id="why-can-two-holdings-of-the-same-asset-remain-separate">Why can
+two holdings of the same asset remain separate?</h2>
+<p>Because they can have different cost bases or account context. The
+model can apply the same asset return shock while preserving
+position-level tax and liquidation information.</p>
+<hr />
+<h1 id="checklist-before-making-an-important-decision">Checklist —
+Before making an important decision</h1>
+<ul class="task-list">
+<li><label><input type="checkbox" />The baseline reflects my actual
+current cash, investments, debts, and housing.</label></li>
+<li><label><input type="checkbox" />Income is not inflated by
+hypothetical resources unless that is the scenario being
+tested.</label></li>
+<li><label><input type="checkbox" />Essential expenses are realistic and
+include irregular costs where material.</label></li>
+<li><label><input type="checkbox" />I checked whether values are nominal
+or inflation-linked.</label></li>
+<li><label><input type="checkbox" />Investment return, volatility, fee,
+and correlation assumptions are defensible.</label></li>
+<li><label><input type="checkbox" />I did not double-count distributions
+in a total-return asset.</label></li>
+<li><label><input type="checkbox" />Investment cost basis is reasonable
+where taxable liquidation matters.</label></li>
+<li><label><input type="checkbox" />Property purchase, maintenance,
+insurance, sale, and financing costs are represented.</label></li>
+<li><label><input type="checkbox" />I checked both <strong>Net
+Worth</strong> and <strong>Liquid Net Worth</strong>.</label></li>
+<li><label><input type="checkbox" /><strong>Liquidity Runway</strong> is
+acceptable, not merely terminal wealth.</label></li>
+<li><label><input type="checkbox" />The decision scenarios start from
+comparable household resources.</label></li>
+<li><label><input type="checkbox" />I changed only the variables
+required by the decision, where possible.</label></li>
+<li><label><input type="checkbox" />Required goals have the correct
+priority and target date.</label></li>
+<li><label><input type="checkbox" />I reviewed deterministic goal status
+before running Monte Carlo.</label></li>
+<li><label><input type="checkbox" />I reran Monte Carlo after material
+plan changes.</label></li>
+<li><label><input type="checkbox" />I looked at failure probability and
+lower percentiles, not only median wealth.</label></li>
+<li><label><input type="checkbox" />I checked break-even or sensitivity
+where the decision has uncertain inputs.</label></li>
+<li><label><input type="checkbox" />I tested robustness for an important
+Rent-vs-Buy conclusion.</label></li>
+<li><label><input type="checkbox" />I used Attribution to verify that
+the scenario delta comes from the intended changes.</label></li>
+<li><label><input type="checkbox" />I read all blocking issues and
+relevant warnings.</label></li>
+<li><label><input type="checkbox" />I understand which tax assumptions
+are simplified.</label></li>
+<li><label><input type="checkbox" />I considered important personal
+constraints that the model does not quantify.</label></li>
+<li><label><input type="checkbox" />I saved/exported the plan before
+committing to major edits.</label></li>
+</ul>
+<hr />
+<h1 id="checklist-data-backup-and-security">Checklist — Data backup and
+security</h1>
+<ul class="task-list">
+<li><label><input type="checkbox" />I know whether the status says
+<strong>Saved · IndexedDB</strong>, <strong>Saved ·
+localStorage</strong>, <strong>Unsaved</strong>, or <strong>Session
+only</strong>.</label></li>
+<li><label><input type="checkbox" />I do not treat local browser storage
+as my only backup.</label></li>
+<li><label><input type="checkbox" />I periodically export a <strong>Plan
+JSON</strong>.</label></li>
+<li><label><input type="checkbox" />I periodically export a
+<strong>Portable HTML</strong>.</label></li>
+<li><label><input type="checkbox" />Before a major Rebase or
+restructuring, I create a fresh external backup.</label></li>
+<li><label><input type="checkbox" />Sensitive Portable HTML files are
+stored or transmitted appropriately.</label></li>
+<li><label><input type="checkbox" />If I use <strong>Encrypted Portable
+HTML</strong>, the password is stored in a secure password
+manager.</label></li>
+<li><label><input type="checkbox" />I understand that a lost encryption
+password may make the file unrecoverable.</label></li>
+<li><label><input type="checkbox" />I keep at least one backup separate
+from the device/browser that contains the working copy.</label></li>
+<li><label><input type="checkbox" />Before clearing browser storage in
+Recovery mode, I export recoverable data if possible.</label></li>
+<li><label><input type="checkbox" />After moving to another
+device/browser, I verify that the imported plan produces the expected
+deterministic headline result.</label></li>
+<li><label><input type="checkbox" />For an important analysis, I record
+the build/version, plan fingerprint, seed, and path count shown in
+<strong>Audit</strong>.</label></li>
+</ul>
+<hr />
+<h1 id="conclusion">Conclusion</h1>
+<p>Financial Decision Studio is most useful when treated as a
+disciplined decision process rather than a calculator that outputs one
+final number.</p>
+<p>Build a credible baseline. Protect liquidity. State goals clearly.
+Compare fair alternatives. Understand the deterministic mechanics. Find
+the break-even. Add stochastic risk only after the model is coherent.
+Test whether the conclusion survives assumption error. Identify what
+actually drives the result. Then combine the financial evidence with the
+personal constraints the model cannot decide for you.</p>
+<p>The quality of the answer depends not only on the engine, but on the
+quality of the question and the honesty of the assumptions.</p>
+<p>For important decisions, the most valuable output is often not
+“Scenario A ends €47,000 ahead.” It is:</p>
+<p><strong>“Scenario A remains feasible, preserves the reserve, achieves
+the required goal across a satisfactory range of stochastic paths, and
+remains preferable until these specific assumptions cross these
+identifiable boundaries.”</strong></p>
+<p>That is the level at which Financial Decision Studio should be
+used.</p>
+</body>
+</html>

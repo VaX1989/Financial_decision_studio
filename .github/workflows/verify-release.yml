@@ -1,0 +1,66 @@
+name: Verify release artifacts
+
+on:
+  push:
+    branches: [main]
+    tags: ["v*"]
+  pull_request:
+    branches: [main]
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Required distribution files exist
+        run: |
+          set -e
+          test -f release/Financial_Decision_Studio.html
+          test -f SHA256SUMS.txt
+          test -f LICENSE
+          test -f docs/USER_GUIDE_EN.md
+          test -f docs/USER_GUIDE_IT.md
+          echo "All required distribution files are present."
+
+      - name: SHA256SUMS matches the distributed files
+        run: sha256sum -c SHA256SUMS.txt
+
+      - name: No unexpected external runtime dependency in the release HTML
+        run: |
+          set -e
+          if grep -qE '(fetch\(|XMLHttpRequest|new WebSocket|<script[^>]*\bsrc=|<link[^>]*\b(href)=["'"'"']https?:)' release/Financial_Decision_Studio.html; then
+            echo "::error::release/Financial_Decision_Studio.html appears to reference an external network resource. This project is meant to be fully self-contained."
+            exit 1
+          fi
+          echo "No fetch/XHR/WebSocket/external script or stylesheet references found."
+
+      - name: Inline application scripts parse as valid JavaScript
+        run: |
+          node -e '
+            const fs = require("fs");
+            const html = fs.readFileSync("release/Financial_Decision_Studio.html", "utf8");
+            const re = /<script(?![^>]*\bsrc=)[^>]*>([\s\S]*?)<\/script>/g;
+            let m, count = 0, failed = false;
+            while ((m = re.exec(html))) {
+              count++;
+              try {
+                new Function(m[1]);
+              } catch (e) {
+                failed = true;
+                console.error("Syntax error in inline script #" + count + ": " + e.message);
+              }
+            }
+            if (count === 0) {
+              console.error("No inline <script> blocks found — expected at least one.");
+              process.exit(1);
+            }
+            if (failed) process.exit(1);
+            console.log("Checked " + count + " inline script block(s): all parse as valid JavaScript.");
+          '

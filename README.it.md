@@ -6,7 +6,7 @@ Un'applicazione di pianificazione finanziaria personale e decision intelligence,
 
 **Gratuita per uso personale / non commerciale consentito.** Funziona interamente nel browser — un unico file HTML, nessuna installazione, nessun account, nessun cloud richiesto, offline-first. I tuoi dati finanziari restano sul tuo dispositivo durante il normale utilizzo locale. Distribuita come *source-available* secondo la licenza contenuta in questo repository (non è una licenza open source approvata dalla OSI — vedi [Licenza](#licenza)).
 
-[![Licenza: PolyForm Noncommercial 1.0.0](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue)](LICENSE)
+[![Licenza: PolyForm Strict 1.0.0](https://img.shields.io/badge/license-PolyForm%20Strict%201.0.0-blue)](LICENSE)
 [![Release](https://img.shields.io/badge/release-v3.0.0-2e628f)](../../releases/latest)
 
 ![Financial Decision Studio — dashboard del piano](assets/screenshots/01-plan-dashboard.png)
@@ -53,6 +53,7 @@ Il modo ufficiale per scaricare Financial Decision Studio è l'ultima **[GitHub 
 ## Documentazione
 
 - [Guida utente italiana](docs/USER_GUIDE_IT.md) — la guida completa (Markdown; è disponibile anche una versione HTML in [`docs/USER_GUIDE_IT.html`](docs/USER_GUIDE_IT.html)).
+- [English user guide](docs/USER_GUIDE_EN.md) — the complete guide in English (HTML version: [`docs/USER_GUIDE_EN.html`](docs/USER_GUIDE_EN.html)).
 
 ## Privacy
 
@@ -71,7 +72,7 @@ Vedi [`DISCLAIMER.md`](DISCLAIMER.md) (in inglese) per il disclaimer completo.
 
 ## Licenza
 
-Financial Decision Studio è distribuita secondo la **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)** (SPDX: `PolyForm-Noncommercial-1.0.0`) — vedi [`LICENSE`](LICENSE). In sintesi: uso, copia, modifica e redistribuzione liberi per **qualsiasi scopo non commerciale** (incluso l'uso personale, e l'uso da parte di enti no-profit, scuole, enti di ricerca e istituzioni governative); **l'uso commerciale non è consentito** senza autorizzazione separata. È una licenza **source-available**, non una licenza open source approvata dalla OSI. Spiegazione completa in linguaggio semplice, incluso dove "non commerciale" è più ampio di "uso personale": [`LICENSING.md`](LICENSING.md) (in inglese).
+Financial Decision Studio è distribuita secondo la **[PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0)** (SPDX: `PolyForm-Strict-1.0.0`) — vedi [`LICENSE`](LICENSE). In sintesi: **utilizzo** libero per **qualsiasi scopo non commerciale** (incluso l'uso personale, e l'uso da parte di enti no-profit, scuole, enti di ricerca e istituzioni governative); **l'uso commerciale non è consentito** senza autorizzazione separata, e la licenza **non** concede alcun diritto di ridistribuire copie o creare versioni modificate — scarica sempre la release ufficiale dalla pagina [Releases](../../releases/latest) di questo repository. È una licenza **source-available**, non una licenza open source approvata dalla OSI. Spiegazione completa in linguaggio semplice, incluso il motivo esatto per cui è stata scelta Strict invece della più permissiva PolyForm Noncommercial: [`LICENSING.md`](LICENSING.md) (in inglese).
 
 ## Uso commerciale
 

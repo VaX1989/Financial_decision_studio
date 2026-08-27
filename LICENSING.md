@@ -2,38 +2,37 @@
 
 This document is an informational summary only. **The actual [`LICENSE`](LICENSE) file governs.** If anything here appears to conflict with the license text, the license text controls.
 
-Financial Decision Studio is distributed under the **[PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)**, an established, third-party-authored source-available license published by the PolyForm Project (SPDX identifier: `PolyForm-Noncommercial-1.0.0`). It is **not** an OSI-approved open source license, so this project is described as **source-available**, not "open source."
+Financial Decision Studio is distributed under the **[PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0)**, an established, third-party-authored source-available license published by the PolyForm Project (SPDX identifier: `PolyForm-Strict-1.0.0`). It is **not** an OSI-approved open source license, so this project is described as **source-available**, not "open source."
 
-## What you can do
+## Why Strict, and not Noncommercial
 
-- Use the software for any **noncommercial purpose** — this is broader than "personal use only" (see below).
-- Copy, download, and run it locally, without registration or payment.
-- Modify it and create new works based on it, for noncommercial purposes.
-- Redistribute it — including your modified versions — as long as you pass along the license terms and any required notices.
-- Use it for personal research, study, hobby projects, and similar private, non-income-generating activity.
-- Use it inside a charitable organization, educational institution, public research organization, public safety/health organization, environmental protection organization, or government institution — **regardless of how that organization is funded** — because the license treats this as a permitted noncommercial use.
+We evaluated both **PolyForm Noncommercial 1.0.0** and **PolyForm Strict 1.0.0** for this release. Both licenses share identical "permitted purpose" language (any noncommercial purpose; personal research/study/hobby use; use by charities, schools, research bodies, and government institutions). They differ on exactly one point, and it's the point that decided this: what a licensee is allowed to do with copies of the software itself.
 
-## What you cannot do
+- **Noncommercial** additionally grants a right to **redistribute** the software (including modified versions) for noncommercial purposes.
+- **Strict** grants the right to **use** the software for any permitted (noncommercial) purpose, but — quoting the license directly — *"other than distributing the software or making changes or new works based on the software."* It does not grant a distribution or modification right at all, commercial or not.
 
-- Use the software, or anything built from it, for a **commercial purpose** (this is not defined narrowly — see "Scope" below).
+The copyright holder's priority for this release is maximum practical protection against commercial exploitation **and** against unauthorized redistribution or modified public copies circulating — not enabling a redistribution ecosystem. Strict achieves that directly: instead of "no commercial redistribution," licensees under Strict have no redistribution or modification right whatsoever. We chose Strict for this reason.
+
+## What this means in practice
+
+### You can
+
+- Download the official release and **run it** — including for any noncommercial purpose: personal financial planning, research, study, hobby use, and use inside charitable organizations, educational institutions, public research organizations, public safety/health organizations, environmental protection organizations, and government institutions, regardless of their funding source.
+- Exercise whatever "fair use" rights copyright law already gives you — the license does not limit those.
+
+### You cannot
+
+- **Redistribute copies of the software** — not a mirror, not a copy attached to an email, not a re-upload, not a fork published elsewhere — even for noncommercial purposes, even unmodified. The license simply does not grant that right.
+- **Modify the software or create derivative/new works based on it** — again, regardless of commercial intent. Translating, patching, or building a variant is not covered.
+- Use the software, or anything built from it, for a **commercial purpose**.
 - Sublicense or transfer your license to someone else.
-- Remove or omit the required license terms and notices when you redistribute copies.
-- Rely on this license for a patent license if you assert a patent infringement claim against the software (the patent grant ends immediately in that case — see [`LICENSE`](LICENSE), "Patent Defense").
+- Rely on the patent grant if you assert a patent infringement claim against the software (it ends immediately — see [`LICENSE`](LICENSE), "Patent Defense").
 
-## Personal use vs. the license's actual scope — read this carefully
+**The only official source of the software is this repository and its GitHub Releases.** The copyright holder distributes it here directly (as copyright holder, not as a licensee) — that's how downloads and Releases work and remain fully permitted. What the license restricts is what a *licensee* — i.e., anyone who receives a copy — may do with it afterward, and that does not include passing it on or publishing a changed version.
 
-Our practical goal is for ordinary individuals to use Financial Decision Studio for their own personal financial planning, free of charge. However, the PolyForm Noncommercial License 1.0.0 — like other established noncommercial licenses — defines "permitted purpose" more broadly than "personal use by an individual." Specifically, it also permits use by:
+## Personal use vs. the license's actual scope
 
-- charitable organizations,
-- educational institutions,
-- public research organizations,
-- public safety or health organizations,
-- environmental protection organizations, and
-- government institutions,
-
-for any noncommercial purpose, regardless of their funding source.
-
-We are not narrowing this in the README or anywhere else in this repository beyond what the license itself grants. We would rather be legally accurate than imply a stronger or narrower restriction than the license actually provides. If you are unsure whether your intended use qualifies as "noncommercial," read the license's "Noncommercial Purposes," "Personal Uses," and "Noncommercial Organizations" sections directly, or contact the project owner (see [`COMMERCIAL.md`](COMMERCIAL.md)).
+Our practical goal is for ordinary individuals to use Financial Decision Studio for their own personal financial planning, free of charge. Like PolyForm Noncommercial, PolyForm Strict defines "permitted purpose" more broadly than "personal use by an individual" — it also covers use by charitable organizations, educational institutions, public research organizations, public safety/health organizations, environmental protection organizations, and government institutions, for any noncommercial purpose, regardless of funding. We are not narrowing this beyond what the license itself grants, and we are not implying it grants less than it does either: Strict does **not** grant any redistribution or modification right to anyone, individual or organization alike.
 
 ## Commercial use
 
@@ -41,7 +40,7 @@ Any use with a commercial purpose — including, without limitation, resale, pai
 
 ## Access to source is not a grant of rights
 
-This repository is publicly readable on GitHub, and GitHub itself provides platform features such as viewing, cloning, and forking. Being able to view or copy the source code does not, by itself, grant you any commercial-use, redistribution, derivative-work, or other rights beyond those actually granted by the [`LICENSE`](LICENSE).
+This repository is publicly readable on GitHub, and GitHub itself provides platform features such as viewing, cloning, and forking. Being able to view or copy the source code does not, by itself, grant you any redistribution, modification, derivative-work, or commercial-use right beyond those actually granted by the [`LICENSE`](LICENSE) — under PolyForm Strict, that means viewing and running the official release, and nothing more.
 
 ## Donations and sponsorships
 

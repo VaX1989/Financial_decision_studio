@@ -38,4 +38,4 @@ You can export your plan as a portable HTML file — including an encrypted vari
 
 ## Limits of this statement
 
-This document reflects what the current release's code does and does not do, as inspected. It is not a guarantee of absolute privacy or security: your browser, operating system, extensions, or device could still affect how locally stored data is protected. If you download a modified or third-party copy of the software, this document may no longer apply — only the official release referenced above has been reviewed.
+This document reflects what the current release's code does and does not do, as inspected. It is not a guarantee of absolute privacy or security: your browser, operating system, extensions, or device could still affect how locally stored data is protected. This document applies only to the official release referenced above, downloaded from this repository's GitHub Releases.

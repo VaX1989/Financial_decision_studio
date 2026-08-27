@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you reference this software, please cite it as below."
+type: software
+title: "Financial Decision Studio"
+version: "3.0.0"
+date-released: "2026-08-26"
+url: "https://github.com/VaX1989/Financial_decision_studio"
+repository-code: "https://github.com/VaX1989/Financial_decision_studio"
+license: "PolyForm-Strict-1.0.0"
+abstract: >-
+  A local-first personal financial planning and decision intelligence
+  application, distributed as a single self-contained HTML file, under
+  the PolyForm Strict License 1.0.0 (source-available, noncommercial use).
+authors:
+  - entity: "VaX1989"

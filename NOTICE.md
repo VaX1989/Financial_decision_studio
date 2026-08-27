@@ -4,7 +4,7 @@
 
 **Copyright:** Copyright (c) 2026 VaX1989 (https://github.com/VaX1989). All rights reserved except as expressly granted below.
 
-**Governing license:** [PolyForm Noncommercial License 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0) — see [`LICENSE`](LICENSE).
+**Governing license:** [PolyForm Strict License 1.0.0](https://polyformproject.org/licenses/strict/1.0.0) — see [`LICENSE`](LICENSE).
 
 **Status:** Source-available. Financial Decision Studio is **not** an OSI-approved open source license; see [`LICENSING.md`](LICENSING.md) for what that means in practice.
 
