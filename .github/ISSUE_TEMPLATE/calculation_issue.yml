@@ -1,0 +1,49 @@
+name: Calculation / Model Discrepancy
+description: A number, projection, or KPI doesn't match what you expect.
+title: "[Calculation]: "
+labels: ["calculation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Do not upload real sensitive financial information.** Reproduce the issue with anonymized/example data whenever possible.
+  - type: input
+    id: app-version
+    attributes:
+      label: App version / build
+      placeholder: "3.0.0 / FDS-DEFINITIVE-20260826"
+    validations:
+      required: true
+  - type: input
+    id: feature
+    attributes:
+      label: Feature involved
+      description: e.g. Rent vs Buy, Mortgage, Monte Carlo, Goal tracking, Tax pack, Ledger...
+    validations:
+      required: true
+  - type: textarea
+    id: assumptions
+    attributes:
+      label: Assumptions used
+      description: The inputs that produced the result (use example numbers, not your real data).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected calculation
+      description: What you believe the correct result should be, and why (e.g. manual calculation, another tool, a formula).
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed result
+      description: What the app actually showed.
+    validations:
+      required: true
+  - type: textarea
+    id: reference
+    attributes:
+      label: Independent reference (optional)
+      description: A spreadsheet formula, published formula, or other tool's result you compared against, if any.

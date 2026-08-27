@@ -1,0 +1,26 @@
+name: Feature Request
+description: Suggest an improvement to a decision, planning, or analysis capability.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: decision-problem
+    attributes:
+      label: What decision or planning problem is this about?
+      description: What are you trying to figure out that the app doesn't currently help with well?
+    validations:
+      required: true
+  - type: textarea
+    id: user-value
+    attributes:
+      label: Why would this help?
+      description: What would change about how you use the app, or what better decision it would enable.
+    validations:
+      required: true
+  - type: textarea
+    id: desired-behavior
+    attributes:
+      label: Desired behavior
+      description: As specific as you can be about what you'd want to see.
+    validations:
+      required: true

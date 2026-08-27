@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Commercial licensing enquiry
+    url: https://github.com/VaX1989/Financial_decision_studio/blob/main/COMMERCIAL.md
+    about: For professional, organizational, embedded, hosted, or white-label use — not a bug/feature issue.
+  - name: Security vulnerability
+    url: https://github.com/VaX1989/Financial_decision_studio/security/advisories/new
+    about: Please use private reporting instead of a public issue — see SECURITY.md.
